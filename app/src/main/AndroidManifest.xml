@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medicare">
+        <activity
+            android:name=".Activities.Patient_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dr_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Package_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Lab_test_Packages_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Popular_Dr_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Rate_Review_Product_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Track_Order_details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dr_List_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Order_History_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Checkout_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Address_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Cart_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Product_Disc_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Medicines_List_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Medicine_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Change_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Edit_Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Go_to_Login_Signup_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Starting_Slide_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Otp_Verify_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

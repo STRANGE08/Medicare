@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_one"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:src="@drawable/lab_test_image" />
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="RTPCR Test"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:src="@drawable/lab_test_image"/>
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Diabetes"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:src="@drawable/lab_test_image"/>
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Heart"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

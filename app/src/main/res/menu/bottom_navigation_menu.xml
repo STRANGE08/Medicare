@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="" />
+    <item
+        android:id="@+id/map_doctor"
+        android:enabled="true"
+        android:icon="@drawable/first_aid_box"
+        android:title="" />
+    <item
+        android:id="@+id/labtest"
+        android:enabled="true"
+        android:icon="@drawable/labtest"
+        android:iconTint="@color/primary_glow"
+        android:title="" />
+    <item
+        android:id="@+id/notification"
+        android:enabled="true"
+        android:icon="@drawable/blue_notifications"
+        android:title="" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="" />
+</menu>
