@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medicare">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".Activities.Schedule_Activity"
+            android:exported="false" />
+        <activity
+>>>>>>> 211ef5b (Initial commit)
             android:name=".Activities.Patient_Details_Activity"
             android:exported="false" />
         <activity
