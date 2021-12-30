@@ -74,10 +74,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp">
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -380,7 +376,6 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
->>>>>>> 211ef5b (Initial commit)
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

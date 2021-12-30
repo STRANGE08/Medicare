@@ -21,8 +21,9 @@ import androidx.cardview.widget.CardView;
 import com.example.medicare.R;
 
 public class Checkout_Activity extends AppCompatActivity {
-    TextView change_address, upi_tv, cod_tv, card_tv;
-    LinearLayout cod_pay, card_pay, upi_pay, card_details_layout, upi_pay_layout, paytm, okicici, ybl, checkout_layout;
+    TextView change_address, upi_tv, cod_tv, card_tv, wallet_tv;
+    LinearLayout cod_pay, card_pay, upi_pay, card_details_layout,
+            upi_pay_layout, paytm, okicici, ybl, checkout_layout, wallet_pay,wallet_pay_layout;
     EditText card_expiry_et, card_no_et, upi_et;
     CardView pay_by_card, pay_by_upi, pay_by_cod;
     private PopupWindow mPopupWindow;
@@ -47,27 +48,52 @@ public class Checkout_Activity extends AppCompatActivity {
         upi_et = findViewById(R.id.upi_et);
         pay_by_cod = findViewById(R.id.pay_by_cod);
         checkout_layout = findViewById(R.id.checkout_layout);
+        wallet_pay = findViewById(R.id.wallet_pay);
+        wallet_tv = findViewById(R.id.wallet_tv);
+        wallet_pay_layout = findViewById(R.id.wallet_pay_layout);
 
 
         change_address.setOnClickListener(v -> {
             finish();
+        });
+        wallet_pay.setOnClickListener(v -> {
+            wallet_pay.setBackgroundResource(R.drawable.address_et_background2);
+            wallet_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
+            upi_pay.setBackgroundResource(R.drawable.address_et_background);
+            upi_tv.setTextColor(getResources().getColor(R.color.black));
+            card_pay.setBackgroundResource(R.drawable.address_et_background);
+            card_tv.setTextColor(getResources().getColor(R.color.black));
+            cod_pay.setBackgroundResource(R.drawable.address_et_background);
+            cod_tv.setTextColor(getResources().getColor(R.color.black));
+            wallet_pay_layout.setVisibility(View.VISIBLE);
+            upi_pay_layout.setVisibility(View.GONE);
+            card_details_layout.setVisibility(View.GONE);
+            pay_by_cod.setVisibility(View.GONE);
+
         });
         upi_pay.setOnClickListener(v -> {
             upi_pay.setBackgroundResource(R.drawable.address_et_background2);
             upi_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
             card_pay.setBackgroundResource(R.drawable.address_et_background);
             card_tv.setTextColor(getResources().getColor(R.color.black));
+            wallet_pay.setBackgroundResource(R.drawable.address_et_background);
+            wallet_tv.setTextColor(getResources().getColor(R.color.black));
             cod_pay.setBackgroundResource(R.drawable.address_et_background);
             cod_tv.setTextColor(getResources().getColor(R.color.black));
             upi_pay_layout.setVisibility(View.VISIBLE);
             card_details_layout.setVisibility(View.GONE);
             pay_by_cod.setVisibility(View.GONE);
+            wallet_pay_layout.setVisibility(View.GONE);
 
         });
 
         card_pay.setOnClickListener(v -> {
+            wallet_pay.setBackgroundResource(R.drawable.address_et_background);
+            wallet_tv.setTextColor(getResources().getColor(R.color.black));
             card_pay.setBackgroundResource(R.drawable.address_et_background2);
             card_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
+            wallet_pay.setBackgroundResource(R.drawable.address_et_background);
+            wallet_tv.setTextColor(getResources().getColor(R.color.black));
             upi_pay.setBackgroundResource(R.drawable.address_et_background);
             upi_tv.setTextColor(getResources().getColor(R.color.black));
             cod_pay.setBackgroundResource(R.drawable.address_et_background);
@@ -76,10 +102,13 @@ public class Checkout_Activity extends AppCompatActivity {
             card_details_layout.setVisibility(View.VISIBLE);
             upi_pay_layout.setVisibility(View.GONE);
             pay_by_cod.setVisibility(View.GONE);
+            wallet_pay_layout.setVisibility(View.GONE);
 
 
         });
         cod_pay.setOnClickListener(v -> {
+            wallet_pay.setBackgroundResource(R.drawable.address_et_background);
+            wallet_tv.setTextColor(getResources().getColor(R.color.black));
             cod_pay.setBackgroundResource(R.drawable.address_et_background2);
             cod_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
             upi_pay.setBackgroundResource(R.drawable.address_et_background);
@@ -89,6 +118,7 @@ public class Checkout_Activity extends AppCompatActivity {
             pay_by_cod.setVisibility(View.VISIBLE);
             card_details_layout.setVisibility(View.GONE);
             upi_pay_layout.setVisibility(View.GONE);
+            wallet_pay_layout.setVisibility(View.GONE);
 
         });
         pay_by_card.setOnClickListener(v -> {
@@ -99,6 +129,7 @@ public class Checkout_Activity extends AppCompatActivity {
 
             card_details_layout.setVisibility(View.GONE);
             upi_pay_layout.setVisibility(View.GONE);
+            wallet_pay_layout.setVisibility(View.GONE);
 
             order_cnf();
         });

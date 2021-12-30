@@ -11,14 +11,10 @@
     <string name="okicici">@okicici</string>
     <string name="ybl">@ypl</string>
     <string name="dummy_text_long">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
-<<<<<<< HEAD
-    <string name="select_relationship">Select Relationship <font color='red'>*</font></string>
-=======
     <string name="select_relationship">Select Relationship <font color='black'>*</font></string>
     <string name="select_gender">Select Gender <font color='black'>*</font></string>
     <string name="tell_us_the_symptom_that_bothering_you_most">Tell us the symptom that bothering you most <font color='black'>*</font></string>
     <string name="eg_symptom">E.g. I am orthodontist patient. I am feeling pain in my backbone from last 10 days. I want to talk with you for this purpose.</string>
     <string name="mobile">Mobile <font color='black'>*</font></string>
     <string name="email_id">Email Id <font color='black'>*</font></string>
->>>>>>> 211ef5b (Initial commit)
 </resources>
