@@ -63,6 +63,7 @@
                         android:text="987 654 3210"
                         android:textColor="@color/grey"
                         android:textSize="14sp"
+                        android:gravity="center_vertical"
                         android:textStyle="normal" />
 
                 </LinearLayout>
@@ -70,13 +71,13 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
                     android:layout_marginStart="10dp"
+                    android:gravity="end"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="15dp"
-                        android:layout_height="18sp"
+                        android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/mail"
                         app:tint="@color/colorPrimary" />
@@ -85,6 +86,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
                         android:layout_marginStart="10dp"
                         android:text="strange@example.com"
                         android:textColor="@color/grey"
@@ -100,13 +102,38 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="10dp"
                 android:background="@color/colorGrey" />
+            <LinearLayout
+                android:id="@+id/wallet_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/wallet"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:text="Wallet"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/edit_profile_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -178,6 +205,7 @@
                     android:textSize="16sp"
                     android:textStyle="normal" />
             </LinearLayout>
+
 
             <LinearLayout
                 android:id="@+id/settings_layout"
