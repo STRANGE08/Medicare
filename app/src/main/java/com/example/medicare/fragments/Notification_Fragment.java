@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.medicare.Adapters.Notification_Adapter;
-import com.example.medicare.Adapters.Offers_Adapder_HomeFrag;
 import com.example.medicare.R;
 
 

@@ -1,9 +1,8 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -12,12 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.medicare.Activities.Select_Address_activity;
 import com.example.medicare.Adapters.Cart_Items_Adapter;
 import com.example.medicare.Adapters.Offer_Code_Adapter;
 import com.example.medicare.R;
 
-public class Cart_Activity extends AppCompatActivity {
-    LinearLayout promocode_layout, checkout_layout,apply_coupon_layout;
+public class Medicine_Cart_Activity extends AppCompatActivity {
+    LinearLayout promocode_layout, checkout_layout, apply_coupon_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +34,12 @@ public class Cart_Activity extends AppCompatActivity {
         cart_item_recycler
                 .setLayoutManager(
                         new LinearLayoutManager(
-                                Cart_Activity.this, RecyclerView.VERTICAL, false));
+                                Medicine_Cart_Activity.this, RecyclerView.VERTICAL, false));
         cart_item_recycler
-                .setAdapter(new Cart_Items_Adapter(Cart_Activity.this));
+                .setAdapter(new Cart_Items_Adapter(Medicine_Cart_Activity.this));
 
         findViewById(R.id.add_address).setOnClickListener(v -> {
-            startActivity(new Intent(Cart_Activity.this, Address_activity.class));
+            startActivity(new Intent(Medicine_Cart_Activity.this, Select_Address_activity.class));
         });
 
         findViewById(R.id.back).setOnClickListener(v -> {
@@ -61,21 +61,21 @@ public class Cart_Activity extends AppCompatActivity {
         offers_code_recycler
                 .setLayoutManager(
                         new LinearLayoutManager(
-                                Cart_Activity.this, RecyclerView.VERTICAL, false));
+                                Medicine_Cart_Activity.this, RecyclerView.VERTICAL, false));
 
         offers_code_recycler
-                .setAdapter(new Offer_Code_Adapter(Cart_Activity.this));
+                .setAdapter(new Offer_Code_Adapter(Medicine_Cart_Activity.this));
 
     }
 
     @Override
     public void onBackPressed() {
-       if (promocode_layout.getVisibility()==View.VISIBLE){
-           promocode_layout.setVisibility(View.GONE);
-           checkout_layout.setVisibility(View.VISIBLE);
-       }else {
-           finish();
-       }
+        if (promocode_layout.getVisibility() == View.VISIBLE) {
+            promocode_layout.setVisibility(View.GONE);
+            checkout_layout.setVisibility(View.VISIBLE);
+        } else {
+            finish();
+        }
     }
 
 

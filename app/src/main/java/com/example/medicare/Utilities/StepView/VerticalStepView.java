@@ -45,9 +45,9 @@ public class VerticalStepView extends LinearLayout implements VerticalStepViewIn
 
     private void init() {
         View rootView = LayoutInflater.from(getContext()).inflate(R.layout.widget_vertical_stepsview, this);
-        mStepsViewIndicator = (VerticalStepViewIndicator) rootView.findViewById(R.id.steps_indicator);
+        mStepsViewIndicator = rootView.findViewById(R.id.steps_indicator);
         mStepsViewIndicator.setOnDrawListener(this);
-        mTextContainer = (RelativeLayout) rootView.findViewById(R.id.rl_text_container);
+        mTextContainer = rootView.findViewById(R.id.rl_text_container);
     }
 
     @Override
@@ -84,8 +84,6 @@ public class VerticalStepView extends LinearLayout implements VerticalStepViewIn
     }
 
     /**
-
-     *
      * @param unComplectedTextColor
      * @return
      */
@@ -95,8 +93,6 @@ public class VerticalStepView extends LinearLayout implements VerticalStepViewIn
     }
 
     /**
-
-     *
      * @param complectedTextColor
      * @return
      */

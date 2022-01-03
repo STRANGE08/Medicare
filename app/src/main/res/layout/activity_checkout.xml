@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Checkout_Activity">
+    tools:context=".Activities.Medicines.Medicine_Checkout_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

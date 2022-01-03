@@ -1,17 +1,13 @@
-package com.example.medicare.Activities;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.LinearSnapHelper;
-import androidx.recyclerview.widget.RecyclerView;
+package com.example.medicare.Activities.Doctor;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.medicare.Adapters.Popular_Dr_Adapter;
 import com.example.medicare.R;
-import com.example.medicare.Utilities.SnapHelperOneByOne;
-
-import ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator;
 
 public class Popular_Dr_Activity extends AppCompatActivity {
 

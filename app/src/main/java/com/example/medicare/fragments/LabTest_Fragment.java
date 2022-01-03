@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Lab_test_Packages_Activity;
+import com.example.medicare.Activities.Lab_Test.Lab_test_Packages_Activity;
 import com.example.medicare.Adapters.LabTest_Category_Adapter;
 import com.example.medicare.Adapters.Labtest_offer_Adapter;
 import com.example.medicare.Adapters.Popular_health_checkup_Adapter;
@@ -85,7 +85,7 @@ public class LabTest_Fragment extends Fragment {
 
         view.findViewById(R.id.view_all).setOnClickListener(v -> {
             startActivity(new Intent(context, Lab_test_Packages_Activity.class)
-                    .putExtra("name","package"));
+                    .putExtra("name", "package"));
         });
 
     }

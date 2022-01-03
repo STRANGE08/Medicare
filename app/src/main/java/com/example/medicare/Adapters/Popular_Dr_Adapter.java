@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Dr_Details_Activity;
+import com.example.medicare.Activities.Doctor.Dr_Details_Activity;
 import com.example.medicare.R;
 
 public class Popular_Dr_Adapter extends RecyclerView.Adapter<Popular_Dr_Adapter.MyViewHolder> {

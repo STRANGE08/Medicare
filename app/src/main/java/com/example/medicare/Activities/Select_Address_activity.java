@@ -8,9 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.medicare.Activities.Medicines.Medicine_Checkout_Activity;
 import com.example.medicare.R;
 
-public class Address_activity extends AppCompatActivity {
+public class Select_Address_activity extends AppCompatActivity {
     LinearLayout home_linear, work_linear, other_linear, add_address, add_address_layout, address_layout;
     LinearLayout work_address, home_address;
     boolean home, work, other;
@@ -88,10 +89,10 @@ public class Address_activity extends AppCompatActivity {
             address_layout.setVisibility(View.VISIBLE);
         });
         work_address.setOnClickListener(v -> {
-            startActivity(new Intent(Address_activity.this, Checkout_Activity.class));
+            startActivity(new Intent(Select_Address_activity.this, Medicine_Checkout_Activity.class));
         });
         home_address.setOnClickListener(v -> {
-            startActivity(new Intent(Address_activity.this, Checkout_Activity.class));
+            startActivity(new Intent(Select_Address_activity.this, Medicine_Checkout_Activity.class));
         });
 
     }

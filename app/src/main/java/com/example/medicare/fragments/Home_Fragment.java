@@ -14,11 +14,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Cart_Activity;
-import com.example.medicare.Activities.Lab_test_Packages_Activity;
-import com.example.medicare.Activities.Medicine_Activity;
-import com.example.medicare.Activities.Medicines_List_Activity;
-import com.example.medicare.Activities.Popular_Dr_Activity;
+import com.example.medicare.Activities.Medicines.Medicine_Cart_Activity;
+import com.example.medicare.Activities.Doctor.Popular_Dr_Activity;
+import com.example.medicare.Activities.Lab_Test.Lab_test_Packages_Activity;
+import com.example.medicare.Activities.Medicines.Medicine_Activity;
+import com.example.medicare.Activities.Medicines.Medicines_List_Activity;
 import com.example.medicare.Adapters.Labtest_offer_Adapter;
 import com.example.medicare.Adapters.Medicine_Category_Adapter;
 import com.example.medicare.Adapters.Medicines_Offer_Adapter;
@@ -120,7 +120,7 @@ public class Home_Fragment extends Fragment {
         });
         view.findViewById(R.id.more_packages).setOnClickListener(v -> {
             startActivity(new Intent(context, Lab_test_Packages_Activity.class)
-            .putExtra("name","package"));
+                    .putExtra("name", "package"));
         });
 
         RecyclerView popular_package_recycler = view.findViewById(R.id.popular_package_recycler);
@@ -155,7 +155,7 @@ public class Home_Fragment extends Fragment {
 
 
         view.findViewById(R.id.go_to_cart).setOnClickListener(v -> {
-            context.startActivity(new Intent(context, Cart_Activity.class));
+            context.startActivity(new Intent(context, Medicine_Cart_Activity.class));
         });
         covid_essential.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Medicines_List_Activity.class)

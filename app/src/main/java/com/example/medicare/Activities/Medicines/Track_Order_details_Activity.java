@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.medicare.Activities.Rate_Review_Product_Activity;
 import com.example.medicare.R;
 import com.example.medicare.Utilities.StepView.VerticalStepView;
 
@@ -15,8 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Track_Order_details_Activity extends AppCompatActivity {
-    private VerticalStepView mSetpview0;
     TextView rate_review_tv, need_help_tv;
+    private VerticalStepView mSetpview0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

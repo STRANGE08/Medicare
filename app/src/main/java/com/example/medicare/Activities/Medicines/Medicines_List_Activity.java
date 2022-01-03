@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -93,7 +93,7 @@ public class Medicines_List_Activity extends AppCompatActivity {
                         Medicines_List_Activity.this));
 
         findViewById(R.id.go_to_cart).setOnClickListener(v -> {
-            startActivity(new Intent(Medicines_List_Activity.this, Cart_Activity.class));
+            startActivity(new Intent(Medicines_List_Activity.this, Medicine_Cart_Activity.class));
         });
 
     }

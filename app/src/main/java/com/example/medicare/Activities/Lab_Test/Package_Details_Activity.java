@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Lab_Test;
 
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -25,7 +25,7 @@ public class Package_Details_Activity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
 
-    TextView description_tv,old_price;
+    TextView description_tv, old_price;
     LinearLayout test_requirements;
     ImageView down_arrow, up_arrow;
     RelativeLayout included_layout;

@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Medicines_List_Activity;
+import com.example.medicare.Activities.Medicines.Medicines_List_Activity;
 import com.example.medicare.R;
 
 public class Medicine_Category_Adapter extends RecyclerView.Adapter<Medicine_Category_Adapter.MyViewHolder> {

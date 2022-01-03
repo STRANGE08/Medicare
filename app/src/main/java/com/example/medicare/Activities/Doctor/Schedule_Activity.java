@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Doctor;
 
 import android.os.Bundle;
 import android.widget.CalendarView;
@@ -6,13 +6,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import com.example.medicare.R;
 
 public class Schedule_Activity extends AppCompatActivity {
     RelativeLayout btn_nineam, btn_twelve, btn_three, btn_fivepm, btn_sixpm, btn_eightpm;
-    TextView tv_9am,tv_1230pm,tv_8pm,tv_6pm,tv_5pm,tv_3pm;
+    TextView tv_9am, tv_1230pm, tv_8pm, tv_6pm, tv_5pm, tv_3pm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

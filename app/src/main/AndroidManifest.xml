@@ -16,52 +16,52 @@
             android:name=".Activities.Wallet_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Schedule_Activity"
+            android:name=".Activities.Doctor.Schedule_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Patient_Details_Activity"
+            android:name=".Activities.Doctor.Patient_Details_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Dr_Details_Activity"
+            android:name=".Activities.Doctor.Dr_Details_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Package_Details_Activity"
+            android:name=".Activities.Lab_Test.Package_Details_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Lab_test_Packages_Activity"
+            android:name=".Activities.Lab_Test.Lab_test_Packages_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Popular_Dr_Activity"
+            android:name=".Activities.Doctor.Popular_Dr_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Rate_Review_Product_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Track_Order_details_Activity"
+            android:name=".Activities.Medicines.Track_Order_details_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Dr_List_Activity"
+            android:name=".Activities.Doctor.Dr_List_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Order_History_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Checkout_Activity"
+            android:name=".Activities.Medicines.Medicine_Checkout_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Address_activity"
+            android:name=".Activities.Select_Address_activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Cart_Activity"
+            android:name=".Activities.Medicines.Medicine_Cart_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Product_Disc_Activity"
+            android:name=".Activities.Medicines.Product_Disc_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Medicines_List_Activity"
+            android:name=".Activities.Medicines.Medicines_List_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Medicine_Activity"
+            android:name=".Activities.Medicines.Medicine_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Change_Password_Activity"

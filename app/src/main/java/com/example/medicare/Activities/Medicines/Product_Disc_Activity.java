@@ -1,16 +1,14 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
@@ -108,12 +106,8 @@ public class Product_Disc_Activity extends AppCompatActivity {
 
 
         findViewById(R.id.go_to_cart).setOnClickListener(v -> {
-            startActivity(new Intent(Product_Disc_Activity.this, Cart_Activity.class));
+            startActivity(new Intent(Product_Disc_Activity.this, Medicine_Cart_Activity.class));
         });
-
-
-
-
 
 
     }

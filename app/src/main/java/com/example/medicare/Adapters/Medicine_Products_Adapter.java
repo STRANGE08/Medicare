@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Product_Disc_Activity;
+import com.example.medicare.Activities.Medicines.Product_Disc_Activity;
 import com.example.medicare.R;
 
 public class Medicine_Products_Adapter extends RecyclerView.Adapter<Medicine_Products_Adapter.MyViewHolder> {

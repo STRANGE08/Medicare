@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Lab_test_Packages_Activity;
+import com.example.medicare.Activities.Lab_Test.Lab_test_Packages_Activity;
 import com.example.medicare.R;
 
 public class LabTest_Category_Adapter extends RecyclerView.Adapter<LabTest_Category_Adapter.MyViewHolder> {
@@ -32,7 +32,7 @@ public class LabTest_Category_Adapter extends RecyclerView.Adapter<LabTest_Categ
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.category_name.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Lab_test_Packages_Activity.class)
-                    .putExtra("name","labtest"));
+                    .putExtra("name", "labtest"));
         });
     }
 

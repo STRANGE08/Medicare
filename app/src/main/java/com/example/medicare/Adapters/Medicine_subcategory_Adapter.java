@@ -35,7 +35,7 @@ public class Medicine_subcategory_Adapter extends RecyclerView.Adapter<Medicine_
         if (selectedPosition == holder.getAdapterPosition()) {
             holder.subcategories_tv.setTextColor(Color.parseColor("#0A9085"));
             holder.subcategories_layout.setBackground(context.getDrawable(R.drawable.selected_category_background));
-        } else{
+        } else {
 
             holder.subcategories_tv.setTextColor(Color.parseColor("#FF000000"));
             holder.subcategories_layout.setBackground(context.getDrawable(R.drawable.round_edittext_background));

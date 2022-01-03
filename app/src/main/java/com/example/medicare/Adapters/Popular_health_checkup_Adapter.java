@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Package_Details_Activity;
+import com.example.medicare.Activities.Lab_Test.Package_Details_Activity;
 import com.example.medicare.R;
 
 public class Popular_health_checkup_Adapter extends RecyclerView.Adapter<Popular_health_checkup_Adapter.MyViewHolder> {
@@ -35,7 +35,7 @@ public class Popular_health_checkup_Adapter extends RecyclerView.Adapter<Popular
         holder.old_price.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         holder.health_checkups.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Package_Details_Activity.class)
-                    .putExtra("type","package"));
+                    .putExtra("type", "package"));
         });
     }
 

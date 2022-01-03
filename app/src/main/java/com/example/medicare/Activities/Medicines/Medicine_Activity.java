@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,6 @@ import com.example.medicare.Adapters.Daily_Deals_Adapter;
 import com.example.medicare.Adapters.Featured_Brands_Adapter;
 import com.example.medicare.Adapters.Medicine_Category_Adapter;
 import com.example.medicare.Adapters.Medicines_Offer_Adapter;
-import com.example.medicare.Adapters.Offers_Adapder_HomeFrag;
 import com.example.medicare.R;
 import com.example.medicare.Utilities.SnapHelperOneByOne;
 
@@ -34,7 +33,6 @@ public class Medicine_Activity extends AppCompatActivity {
         baby_mom = findViewById(R.id.baby_mom);
         skin_care = findViewById(R.id.skin_care);
         diabtic_care = findViewById(R.id.diabtic_care);
-
 
 
         findViewById(R.id.back).setOnClickListener(v -> {
@@ -115,8 +113,8 @@ public class Medicine_Activity extends AppCompatActivity {
             startActivity(new Intent(Medicine_Activity.this, Medicines_List_Activity.class)
                     .putExtra("category", "skin_care"));
         });
-       findViewById(R.id.go_to_cart).setOnClickListener(v -> {
-           startActivity(new Intent(Medicine_Activity.this, Cart_Activity.class));
+        findViewById(R.id.go_to_cart).setOnClickListener(v -> {
+            startActivity(new Intent(Medicine_Activity.this, Medicine_Cart_Activity.class));
         });
 
     }

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Dr_List_Activity;
+import com.example.medicare.Activities.Doctor.Dr_List_Activity;
 import com.example.medicare.R;
 
 public class Dr_Category_Adapter extends RecyclerView.Adapter<Dr_Category_Adapter.MyViewHolder> {
@@ -41,7 +41,6 @@ public class Dr_Category_Adapter extends RecyclerView.Adapter<Dr_Category_Adapte
 
             }
         });
-
 
 
     }

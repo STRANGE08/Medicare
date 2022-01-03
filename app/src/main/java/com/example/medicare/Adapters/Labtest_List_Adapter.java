@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Package_Details_Activity;
+import com.example.medicare.Activities.Lab_Test.Package_Details_Activity;
 import com.example.medicare.R;
 
 public class Labtest_List_Adapter extends RecyclerView.Adapter<Labtest_List_Adapter.MyViewHolder> {
@@ -20,6 +20,7 @@ public class Labtest_List_Adapter extends RecyclerView.Adapter<Labtest_List_Adap
     public Labtest_List_Adapter(Context context) {
         this.context = context;
     }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -32,7 +33,7 @@ public class Labtest_List_Adapter extends RecyclerView.Adapter<Labtest_List_Adap
         holder.old_price.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         holder.package_name.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Package_Details_Activity.class)
-            .putExtra("type","labtest"));
+                    .putExtra("type", "labtest"));
         });
     }
 
@@ -42,7 +43,7 @@ public class Labtest_List_Adapter extends RecyclerView.Adapter<Labtest_List_Adap
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView old_price,package_name;
+        TextView old_price, package_name;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

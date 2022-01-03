@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Track_Order_details_Activity;
+import com.example.medicare.Activities.Medicines.Track_Order_details_Activity;
 import com.example.medicare.R;
 
 public class Past_Order_Adapter extends RecyclerView.Adapter<Past_Order_Adapter.MyViewHolder> {
@@ -31,7 +31,7 @@ public class Past_Order_Adapter extends RecyclerView.Adapter<Past_Order_Adapter.
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.track_order_tv.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Track_Order_details_Activity.class)
-            .putExtra("status","delivered"));
+                    .putExtra("status", "delivered"));
         });
     }
 

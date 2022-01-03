@@ -1,10 +1,10 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Doctor;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.medicare.Adapters.Popular_Dr_Adapter;
 import com.example.medicare.R;

@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,14 +18,15 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.medicare.Activities.Order_History_Activity;
 import com.example.medicare.R;
 
-public class Checkout_Activity extends AppCompatActivity {
+public class Medicine_Checkout_Activity extends AppCompatActivity {
     TextView change_address, upi_tv, cod_tv, card_tv, wallet_tv;
     LinearLayout cod_pay, card_pay, upi_pay, card_details_layout,
-            upi_pay_layout, paytm, okicici, ybl, checkout_layout, wallet_pay,wallet_pay_layout;
+            upi_pay_layout, paytm, okicici, ybl, checkout_layout, wallet_pay, wallet_pay_layout;
     EditText card_expiry_et, card_no_et, upi_et;
-    CardView pay_by_card, pay_by_upi, pay_by_cod,pay_by_wallet;
+    CardView pay_by_card, pay_by_upi, pay_by_cod, pay_by_wallet;
     private PopupWindow mPopupWindow;
 
     @Override
@@ -36,8 +37,8 @@ public class Checkout_Activity extends AppCompatActivity {
         upi_pay = findViewById(R.id.upi_pay);
         cod_pay = findViewById(R.id.cod_pay);
         card_pay = findViewById(R.id.card_pay);
-        upi_tv = findViewById(R.id.upi_tv);
         cod_tv = findViewById(R.id.cod_tv);
+        upi_tv = findViewById(R.id.upi_tv);
         card_tv = findViewById(R.id.card_tv);
         card_expiry_et = findViewById(R.id.card_expiry_et);
         card_no_et = findViewById(R.id.card_no_et);
@@ -93,8 +94,6 @@ public class Checkout_Activity extends AppCompatActivity {
             wallet_tv.setTextColor(getResources().getColor(R.color.black));
             card_pay.setBackgroundResource(R.drawable.address_et_background2);
             card_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
-            wallet_pay.setBackgroundResource(R.drawable.address_et_background);
-            wallet_tv.setTextColor(getResources().getColor(R.color.black));
             upi_pay.setBackgroundResource(R.drawable.address_et_background);
             upi_tv.setTextColor(getResources().getColor(R.color.black));
             cod_pay.setBackgroundResource(R.drawable.address_et_background);
@@ -251,7 +250,7 @@ public class Checkout_Activity extends AppCompatActivity {
         RelativeLayout closebtn = customView.findViewById(R.id.closebtn);
         closebtn.setOnClickListener(view -> {
             mPopupWindow.dismiss();
-            startActivity(new Intent(Checkout_Activity.this, Order_History_Activity.class)
+            startActivity(new Intent(Medicine_Checkout_Activity.this, Order_History_Activity.class)
                     .putExtra("from", "checkout"));
         });
 

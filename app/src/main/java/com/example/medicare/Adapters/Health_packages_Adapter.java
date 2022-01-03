@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Package_Details_Activity;
+import com.example.medicare.Activities.Lab_Test.Package_Details_Activity;
 import com.example.medicare.R;
 
 public class Health_packages_Adapter extends RecyclerView.Adapter<Health_packages_Adapter.MyViewHolder> {
@@ -34,7 +34,7 @@ public class Health_packages_Adapter extends RecyclerView.Adapter<Health_package
         holder.old_price.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         holder.package_name.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Package_Details_Activity.class)
-                    .putExtra("type","package"));
+                    .putExtra("type", "package"));
         });
     }
 
@@ -44,7 +44,7 @@ public class Health_packages_Adapter extends RecyclerView.Adapter<Health_package
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView old_price,package_name;
+        TextView old_price, package_name;
         LinearLayout mLinear_layout;
 
         public MyViewHolder(@NonNull View itemView) {

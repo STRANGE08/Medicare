@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Lab_Test;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -19,7 +19,7 @@ public class Lab_test_Packages_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_lab_test_packages);
 
         TextView test_category_name_tv = findViewById(R.id.test_category_name_tv);
-        String name=getIntent().getStringExtra("name");
+        String name = getIntent().getStringExtra("name");
 
         RecyclerView health_package_recycler_recycler = findViewById(R.id.health_package_recycler_recycler);
         health_package_recycler_recycler
@@ -27,11 +27,11 @@ public class Lab_test_Packages_Activity extends AppCompatActivity {
                         new LinearLayoutManager(
                                 Lab_test_Packages_Activity.this, RecyclerView.VERTICAL, false));
 
-        if (name.equalsIgnoreCase("package")){
+        if (name.equalsIgnoreCase("package")) {
             test_category_name_tv.setText("Health packages");
             health_package_recycler_recycler
                     .setAdapter(new Health_packages_Adapter(Lab_test_Packages_Activity.this));
-        }else if  (name.equalsIgnoreCase("labtest")){
+        } else if (name.equalsIgnoreCase("labtest")) {
             test_category_name_tv.setText("Lab Tests");
             health_package_recycler_recycler
                     .setAdapter(new Labtest_List_Adapter(Lab_test_Packages_Activity.this));

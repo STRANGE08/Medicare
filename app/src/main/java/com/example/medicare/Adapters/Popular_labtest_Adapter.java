@@ -42,7 +42,7 @@ public class Popular_labtest_Adapter extends RecyclerView.Adapter<Popular_labtes
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView old_price,old_price2,old_price3,old_price4;
+        TextView old_price, old_price2, old_price3, old_price4;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

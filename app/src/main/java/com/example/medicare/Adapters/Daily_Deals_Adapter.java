@@ -10,7 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Medicine_Activity;
 import com.example.medicare.R;
 
 public class Daily_Deals_Adapter extends RecyclerView.Adapter<Daily_Deals_Adapter.MyviewHolder> {

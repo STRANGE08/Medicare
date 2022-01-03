@@ -41,7 +41,7 @@ public class Order_History_Activity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("fragment_name", "home");
                 startActivity(intent);
-            } else if (from.equalsIgnoreCase("profile")){
+            } else if (from.equalsIgnoreCase("profile")) {
                 finish();
             }
         });

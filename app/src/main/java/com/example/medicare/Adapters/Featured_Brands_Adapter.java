@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Medicines_List_Activity;
+import com.example.medicare.Activities.Medicines.Medicines_List_Activity;
 import com.example.medicare.R;
 
 public class Featured_Brands_Adapter extends RecyclerView.Adapter<Featured_Brands_Adapter.MyviewHolder> {
@@ -42,6 +42,7 @@ public class Featured_Brands_Adapter extends RecyclerView.Adapter<Featured_Brand
 
     public static class MyviewHolder extends RecyclerView.ViewHolder {
         LinearLayout brand_name;
+
         public MyviewHolder(@NonNull View itemView) {
             super(itemView);
             brand_name = itemView.findViewById(R.id.brand_name);
