@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Rate_Review_Product_Activity">
+    tools:context=".Activities.Medicines.Rate_Review_Product_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

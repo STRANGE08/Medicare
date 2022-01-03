@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Medicines.Medicine_Cart_Activity;
 import com.example.medicare.Activities.Doctor.Popular_Dr_Activity;
 import com.example.medicare.Activities.Lab_Test.Lab_test_Packages_Activity;
 import com.example.medicare.Activities.Medicines.Medicine_Activity;
+import com.example.medicare.Activities.Medicines.Medicine_Cart_Activity;
 import com.example.medicare.Activities.Medicines.Medicines_List_Activity;
 import com.example.medicare.Adapters.Labtest_offer_Adapter;
 import com.example.medicare.Adapters.Medicine_Category_Adapter;

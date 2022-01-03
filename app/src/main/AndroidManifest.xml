@@ -34,7 +34,7 @@
             android:name=".Activities.Doctor.Popular_Dr_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Rate_Review_Product_Activity"
+            android:name=".Activities.Medicines.Rate_Review_Product_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Medicines.Track_Order_details_Activity"
@@ -43,13 +43,13 @@
             android:name=".Activities.Doctor.Dr_List_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Order_History_Activity"
+            android:name=".Activities.Medicines.Order_History_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Medicines.Medicine_Checkout_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Select_Address_activity"
+            android:name=".Activities.Medicines.Select_Address_activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Medicines.Medicine_Cart_Activity"

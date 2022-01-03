@@ -1,4 +1,4 @@
-package com.example.medicare.Activities;
+package com.example.medicare.Activities.Medicines;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.medicare.Activities.Medicines.Medicine_Checkout_Activity;
 import com.example.medicare.R;
 
 public class Select_Address_activity extends AppCompatActivity {

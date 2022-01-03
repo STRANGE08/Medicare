@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.medicare.Activities.Edit_Profile_Activity;
-import com.example.medicare.Activities.Order_History_Activity;
+import com.example.medicare.Activities.Medicines.Order_History_Activity;
 import com.example.medicare.Activities.Settings_Activity;
 import com.example.medicare.Activities.Wallet_Activity;
 import com.example.medicare.MainActivity;
