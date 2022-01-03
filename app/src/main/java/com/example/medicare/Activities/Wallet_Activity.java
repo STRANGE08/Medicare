@@ -1,5 +1,6 @@
 package com.example.medicare.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +19,10 @@ public class Wallet_Activity extends AppCompatActivity {
 
         findViewById(R.id.back).setOnClickListener(v -> {
             finish();
+        });
+
+        findViewById(R.id.add_balance_tv).setOnClickListener(v -> {
+            startActivity(new Intent(Wallet_Activity.this, Add_Balance_Activity.class));
         });
 
         RecyclerView last_transactions_rv = findViewById(R.id.last_transactions_rv);

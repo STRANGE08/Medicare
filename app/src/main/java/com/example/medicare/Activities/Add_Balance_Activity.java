@@ -12,5 +12,10 @@ public class Add_Balance_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_balance);
+
+        findViewById(R.id.back).setOnClickListener(v -> {
+            finish();
+        });
+
     }
 }
