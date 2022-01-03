@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.medicare.Activities.Edit_Profile_Activity;
 import com.example.medicare.Activities.Order_History_Activity;
 import com.example.medicare.Activities.Settings_Activity;
+import com.example.medicare.Activities.Wallet_Activity;
 import com.example.medicare.MainActivity;
 import com.example.medicare.R;
 
@@ -48,6 +49,10 @@ public class Profile_Fragment extends Fragment {
                 .setOnClickListener(v -> {
                     startActivity(new Intent(context, Settings_Activity.class));
                 });
+        view.findViewById(R.id.wallet_layout)
+                .setOnClickListener(v -> {
+                    startActivity(new Intent(context, Wallet_Activity.class));
+                });
         view.findViewById(R.id.notifications)
                 .setOnClickListener(v -> {
                     startActivity(new Intent(context, MainActivity.class)
@@ -56,7 +61,7 @@ public class Profile_Fragment extends Fragment {
         view.findViewById(R.id.order_history)
                 .setOnClickListener(v -> {
                     startActivity(new Intent(context, Order_History_Activity.class)
-                    .putExtra("from","profile"));
+                            .putExtra("from", "profile"));
                 });
     }
 
