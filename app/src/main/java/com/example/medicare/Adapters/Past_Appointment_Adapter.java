@@ -34,7 +34,7 @@ public class Past_Appointment_Adapter extends RecyclerView.Adapter<Past_Appointm
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 4;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

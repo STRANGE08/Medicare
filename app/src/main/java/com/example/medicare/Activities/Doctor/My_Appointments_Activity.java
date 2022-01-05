@@ -54,11 +54,11 @@ public class My_Appointments_Activity extends AppCompatActivity {
 
             my_appointments_rv.setAdapter(new Upcoming_Appointments_Adapter(My_Appointments_Activity.this));
         });
+
         past_appointment_tv.setOnClickListener(v -> {
             past_appointment_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
             upcoming_appointment_tv.setTextColor(getResources().getColor(R.color.black));
             my_appointments_rv.setAdapter(new Past_Appointment_Adapter(My_Appointments_Activity.this));
-
 
         });
 
