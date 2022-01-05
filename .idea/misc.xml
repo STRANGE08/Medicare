@@ -25,6 +25,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_checkout.xml" value="0.152" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_dr_details.xml" value="0.152" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_dr_list.xml" value="0.21157407407407408" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_dr_payment.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_edit_profile.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_go_to_login_signup.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_lab_test_packages.xml" value="0.21157407407407408" />
@@ -39,7 +40,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_patient_details.xml" value="0.2" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_popular_dr.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_product_disc.xml" value="0.17037037037037037" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_rate_review_product.xml" value="0.2" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_rate_review_product.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_register.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_schedule.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_settings.xml" value="0.21157407407407408" />

@@ -1,5 +1,6 @@
 package com.example.medicare.Activities.Doctor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.RelativeLayout;
@@ -13,6 +14,7 @@ public class Schedule_Activity extends AppCompatActivity {
     RelativeLayout btn_nineam, btn_twelve, btn_three, btn_fivepm, btn_sixpm, btn_eightpm;
     TextView tv_9am, tv_1230pm, tv_8pm, tv_6pm, tv_5pm, tv_3pm;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,11 @@ public class Schedule_Activity extends AppCompatActivity {
         calendarView.setMinDate(System.currentTimeMillis());
 
 
+        findViewById(R.id.cnf_appointment_btn).setOnClickListener(v -> {
+            startActivity(new Intent(Schedule_Activity.this, Dr_Payment_Activity.class));
+        });
+
+
         btn_nineam = findViewById(R.id.btn_nineam);
         btn_twelve = findViewById(R.id.btn_twelve);
         btn_three = findViewById(R.id.btn_three);
@@ -29,14 +36,12 @@ public class Schedule_Activity extends AppCompatActivity {
         btn_sixpm = findViewById(R.id.btn_sixpm);
         btn_eightpm = findViewById(R.id.btn_eightpm);
 
-
         tv_9am = findViewById(R.id.tv_9am);
         tv_1230pm = findViewById(R.id.tv_1230pm);
         tv_8pm = findViewById(R.id.tv_8pm);
         tv_6pm = findViewById(R.id.tv_6pm);
         tv_5pm = findViewById(R.id.tv_5pm);
         tv_3pm = findViewById(R.id.tv_3pm);
-
 
         btn_nineam.setOnClickListener(arg0 -> {
             tv_9am.setTextColor(getResources().getColor(R.color.white));
@@ -133,5 +138,7 @@ public class Schedule_Activity extends AppCompatActivity {
             btn_nineam.setBackgroundColor(getResources().getColor(R.color.white));
             btn_sixpm.setBackgroundColor(getResources().getColor(R.color.white));
         });
+
+
     }
 }
