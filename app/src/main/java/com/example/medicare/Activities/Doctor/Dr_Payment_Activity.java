@@ -201,7 +201,7 @@ public class Dr_Payment_Activity extends AppCompatActivity {
 
     void order_cnf() {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View customView = inflater.inflate(R.layout.item_order_cnflayout, null);
+        View customView = inflater.inflate(R.layout.item_appointment_cnflayout, null);
         mPopupWindow = new PopupWindow(customView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         mPopupWindow.setElevation(5.0f);
         // Set a click listener for the popup window close button
@@ -211,8 +211,8 @@ public class Dr_Payment_Activity extends AppCompatActivity {
         RelativeLayout closebtn = customView.findViewById(R.id.closebtn);
         closebtn.setOnClickListener(view -> {
             mPopupWindow.dismiss();
-//            startActivity(new Intent(Dr_Payment_Activity.this, Order_History_Activity.class)
-//                    .putExtra("from", "checkout"));
+            startActivity(new Intent(Dr_Payment_Activity.this, My_Appointments_Activity.class)
+                    .putExtra("from", "dr_payment"));
         });
 
     }

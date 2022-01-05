@@ -34,6 +34,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_main2.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_medicine.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_medicines_list.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_my_appointments.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_order_history.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_otp_verify.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_package_details.xml" value="0.15925925925925927" />
@@ -62,6 +63,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/health_checkup_layout_item.xml" value="0.20787037037037037" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/health_packages_layout_item.xml" value="0.2" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/included_tests_layout_item.xml" value="0.21157407407407408" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_appointment_cnflayout.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_attechmentlayout.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_order_cnflayout.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/labtest_category_layout.xml" value="0.21157407407407408" />
