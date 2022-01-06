@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Doctor.Schedule_Activity">
+    tools:context=".Activities.Doctor.Dr_Actvities.Schedule_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -166,8 +166,8 @@
                     app:cardCornerRadius="10dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@color/et_grey"
                         android:padding="10dp"
                         android:src="@drawable/doctor" />
@@ -177,6 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -220,14 +221,6 @@
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="5dp"
-                        android:text="MBBS DNB(Cardiothoracic Surgery)"
-                        android:textColor="@color/grey"
-                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="200dp"

@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Lab_Test.Lab_test_Packages_Activity;
-import com.example.medicare.Adapters.LabTest_Category_Adapter;
-import com.example.medicare.Adapters.Labtest_offer_Adapter;
-import com.example.medicare.Adapters.Popular_health_checkup_Adapter;
-import com.example.medicare.Adapters.Popular_labtest_Adapter;
+import com.example.medicare.Activities.Lab_Test.Lt_Activites.Lab_test_Packages_Activity;
+import com.example.medicare.Activities.Lab_Test.Lt_Adapters.LabTest_Category_Adapter;
+import com.example.medicare.Activities.Lab_Test.Lt_Adapters.Labtest_offer_Adapter;
+import com.example.medicare.Activities.Lab_Test.Lt_Adapters.Popular_health_checkup_Adapter;
+import com.example.medicare.Activities.Lab_Test.Lt_Adapters.Popular_labtest_Adapter;
 import com.example.medicare.R;
 import com.example.medicare.Utilities.SnapHelperOneByOne;
 

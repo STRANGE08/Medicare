@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/et_grey"
     android:orientation="vertical"
-    tools:context=".Activities.Medicines.Medicines_List_Activity">
+    tools:context=".Activities.Medicines.Md_Activites.Medicines_List_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"

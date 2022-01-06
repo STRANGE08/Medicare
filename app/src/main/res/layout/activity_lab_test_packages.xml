@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Lab_Test.Lab_test_Packages_Activity">
+    tools:context=".Activities.Lab_Test.Lt_Activites.Lab_test_Packages_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

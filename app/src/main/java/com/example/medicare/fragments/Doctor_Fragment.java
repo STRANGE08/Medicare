@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Adapters.Dr_Category_Adapter;
+import com.example.medicare.Activities.Doctor.Dr_Adapters.Dr_Category_Adapter;
 import com.example.medicare.R;
 
 

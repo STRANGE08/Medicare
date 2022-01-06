@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".Activities.Doctor.Popular_Dr_Activity">
+    tools:context=".Activities.Doctor.Dr_Actvities.Popular_Dr_Activity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
