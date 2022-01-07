@@ -13,7 +13,7 @@ import com.example.medicare.Activities.Doctor.Dr_Adapters.Upcoming_Appointments_
 import com.example.medicare.MainActivity;
 import com.example.medicare.R;
 
-public class My_Appointment_list_Activity extends AppCompatActivity {
+public class Appointment_list_Activity extends AppCompatActivity {
     String from;
 
     TextView upcoming_appointment_tv, past_appointment_tv;
@@ -40,10 +40,10 @@ public class My_Appointment_list_Activity extends AppCompatActivity {
         my_appointments_rv
                 .setLayoutManager(
                         new LinearLayoutManager(
-                                My_Appointment_list_Activity.this, RecyclerView.VERTICAL, false
+                                Appointment_list_Activity.this, RecyclerView.VERTICAL, false
                         ));
 
-        my_appointments_rv.setAdapter(new Upcoming_Appointments_Adapter(My_Appointment_list_Activity.this));
+        my_appointments_rv.setAdapter(new Upcoming_Appointments_Adapter(Appointment_list_Activity.this));
 
 
         upcoming_appointment_tv = findViewById(R.id.upcoming_appointment_tv);
@@ -53,13 +53,13 @@ public class My_Appointment_list_Activity extends AppCompatActivity {
             upcoming_appointment_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
             past_appointment_tv.setTextColor(getResources().getColor(R.color.black));
 
-            my_appointments_rv.setAdapter(new Upcoming_Appointments_Adapter(My_Appointment_list_Activity.this));
+            my_appointments_rv.setAdapter(new Upcoming_Appointments_Adapter(Appointment_list_Activity.this));
         });
 
         past_appointment_tv.setOnClickListener(v -> {
             past_appointment_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
             upcoming_appointment_tv.setTextColor(getResources().getColor(R.color.black));
-            my_appointments_rv.setAdapter(new Past_Appointment_Adapter(My_Appointment_list_Activity.this));
+            my_appointments_rv.setAdapter(new Past_Appointment_Adapter(Appointment_list_Activity.this));
 
         });
 

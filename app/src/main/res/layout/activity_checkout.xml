@@ -335,7 +335,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="20dp"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -441,7 +441,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="20dp"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -567,7 +567,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="20dp"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -596,7 +596,7 @@
                 android:layout_marginVertical="20dp"
                 android:visibility="gone"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="1dp">
 
                 <TextView
                     android:layout_width="match_parent"

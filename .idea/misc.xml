@@ -7,6 +7,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable-xxxhdpi/category_background.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable-xxxhdpi/custom_checkbox.xml" value="0.20185185185185187" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable-xxxhdpi/edittext_background.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable-xxxhdpi/round_edittext_background.xml" value="0.15895765472312703" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable/address_et_background.xml" value="0.21296296296296297" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable/address_et_background2.xml" value="0.21296296296296297" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/drawable/apply_coupon_background.xml" value="0.20185185185185187" />
@@ -30,7 +31,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_edit_profile.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_go_to_login_signup.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_lab_test_packages.xml" value="0.21157407407407408" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_login.xml" value="0.1284722222222222" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_main.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_main2.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_medicine.xml" value="0.15555555555555556" />
@@ -41,7 +42,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_package_details.xml" value="0.15925925925925927" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_patient_details.xml" value="0.2" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_popular_dr.xml" value="0.21157407407407408" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_product_disc.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_product_disc.xml" value="0.1284722222222222" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_rate_doctor.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_rate_review_product.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/activity_register.xml" value="0.15925925925925927" />
@@ -59,12 +60,12 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/featured_brands_layout_item.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_doctor.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_lab_test_.xml" value="0.2" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_lab_test_.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_notification.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/fragment_profile.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/health_checkup_layout_item.xml" value="0.20787037037037037" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/health_packages_layout_item.xml" value="0.2" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/included_tests_layout_item.xml" value="0.21157407407407408" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/included_tests_layout_item.xml" value="0.1284722222222222" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_appointment_cnflayout.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_attechmentlayout.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/item_order_cnflayout.xml" value="0.16111111111111112" />
@@ -72,7 +73,7 @@
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/labtest_list_layout_item.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/las_transactions_layout.xml" value="0.14027777777777778" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/last_transactions_layout.xml" value="0.15032894736842106" />
-        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/medicine_category_layout_item.xml" value="0.21157407407407408" />
+        <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/medicine_category_layout_item.xml" value="0.152" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/medicine_products_layout_item.xml" value="0.21157407407407408" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/myappointment_layout.xml" value="0.15032894736842106" />
         <entry key="..\:/Users/hp/Downloads/Medicare/app/src/main/res/layout/notification_layout_item.xml" value="0.21157407407407408" />

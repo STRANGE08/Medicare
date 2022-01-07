@@ -561,12 +561,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="more"
+                    android:visibility="gone"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="normal" />
 
                 <ImageView
                     android:layout_width="20dp"
+                    android:visibility="gone"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/arrow" />
@@ -596,6 +598,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -605,6 +608,7 @@
                     android:textStyle="normal" />
 
                 <ImageView
+                    android:visibility="gone"
                     android:layout_width="20dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"

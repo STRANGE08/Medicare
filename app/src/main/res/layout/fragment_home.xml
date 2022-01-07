@@ -112,7 +112,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@color/medicine_green"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -154,6 +154,7 @@
                         android:layout_height="60dp"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/tests_yello"
+                        app:cardElevation="1dp"
                         app:cardCornerRadius="10dp">
 
                         <LinearLayout
@@ -194,6 +195,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="100dp"
                         android:layout_height="60dp"
+                        app:cardElevation="1dp"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/dr_orange"
                         app:cardCornerRadius="10dp">
@@ -312,7 +314,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -352,7 +354,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -392,7 +394,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -432,7 +434,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -481,7 +483,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -521,7 +523,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -561,7 +563,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"
@@ -601,7 +603,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="1dp">
 
                         <RelativeLayout
                             android:layout_width="65dp"

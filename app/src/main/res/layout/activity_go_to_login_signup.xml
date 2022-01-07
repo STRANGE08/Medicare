@@ -64,7 +64,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/go_to_signup"
                 android:layout_width="match_parent"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="15dp">
 
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="15dp">
 
                 <TextView

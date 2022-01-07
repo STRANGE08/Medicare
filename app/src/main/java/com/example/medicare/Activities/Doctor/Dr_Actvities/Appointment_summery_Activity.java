@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.medicare.R;
 
@@ -28,6 +29,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         TextView change_date_tv = findViewById(R.id.change_date_tv);
         TextView rate_review_tv = findViewById(R.id.rate_review_tv);
 
+        CardView cancel_card = findViewById(R.id.cancel_card);
 
         if (status.equalsIgnoreCase("pending")) {
 
@@ -37,6 +39,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
             cnf_tv.setVisibility(View.GONE);
             canceled_tv.setVisibility(View.GONE);
             complete_tv.setVisibility(View.GONE);
+            cancel_card.setVisibility(View.VISIBLE);
 
         } else if (status.equalsIgnoreCase("confirm")) {
 
@@ -47,7 +50,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
             canceled_tv.setVisibility(View.GONE);
             change_date_tv.setVisibility(View.GONE);
             for_others_layout.setVisibility(View.GONE);
-
+            cancel_card.setVisibility(View.VISIBLE);
         } else if (status.equalsIgnoreCase("complete")) {
 
             complete_tv.setVisibility(View.VISIBLE);
@@ -57,7 +60,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
             for_others_layout.setVisibility(View.GONE);
             change_date_tv.setVisibility(View.GONE);
             rate_review_tv.setVisibility(View.VISIBLE);
-
+            cancel_card.setVisibility(View.GONE);
         } else if (status.equalsIgnoreCase("canceled")) {
 
             canceled_tv.setVisibility(View.VISIBLE);
@@ -66,7 +69,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
             pending_tv.setVisibility(View.GONE);
             for_others_layout.setVisibility(View.GONE);
             change_date_tv.setVisibility(View.GONE);
-
+            cancel_card.setVisibility(View.GONE);
         }
 
 

@@ -20,7 +20,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="10dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
+            app:cardElevation="1dp">
 
             <RelativeLayout
                 android:layout_width="70dp"
@@ -60,7 +60,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="10dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
+            app:cardElevation="1dp">
 
             <RelativeLayout
                 android:layout_width="70dp"
@@ -69,8 +69,8 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/baidyanath" />
             </RelativeLayout>
@@ -101,7 +101,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="10dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
+            app:cardElevation="1dp">
 
             <RelativeLayout
                 android:layout_width="70dp"

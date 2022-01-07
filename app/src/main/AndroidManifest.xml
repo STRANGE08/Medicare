@@ -16,7 +16,7 @@
             android:name=".Activities.Doctor.Dr_Actvities.Appointment_summery_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Doctor.Dr_Actvities.My_Appointment_list_Activity"
+            android:name=".Activities.Doctor.Dr_Actvities.Appointment_list_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Doctor.Dr_Actvities.Dr_Payment_Activity"

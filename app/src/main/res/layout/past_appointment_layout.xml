@@ -133,7 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Dentist"
+                        android:text="Neurosurgeon"
                         android:textColor="@color/charcoal"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -168,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="10dp">
 
                     <TextView
                         android:layout_width="100dp"
@@ -314,7 +314,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Dentist"
+                        android:text="Neurosurgeon"
                         android:textColor="@color/charcoal"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -349,7 +349,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="10dp">
 
                     <TextView
                         android:layout_width="100dp"

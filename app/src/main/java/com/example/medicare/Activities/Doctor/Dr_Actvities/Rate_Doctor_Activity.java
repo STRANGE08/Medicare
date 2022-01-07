@@ -16,6 +16,9 @@ public class Rate_Doctor_Activity extends AppCompatActivity {
         findViewById(R.id.back).setOnClickListener(v -> {
             finish();
         });
+        findViewById(R.id.submit_review).setOnClickListener(v -> {
+            finish();
+        });
 
     }
 }

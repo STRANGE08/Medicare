@@ -159,7 +159,7 @@
                 android:padding="10dp">
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="5dp"
+                    app:cardElevation="1dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="5dp"

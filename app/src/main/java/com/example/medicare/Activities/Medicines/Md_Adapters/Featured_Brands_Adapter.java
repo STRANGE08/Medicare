@@ -29,7 +29,7 @@ public class Featured_Brands_Adapter extends RecyclerView.Adapter<Featured_Brand
 
     @Override
     public void onBindViewHolder(@NonNull MyviewHolder holder, int position) {
-        holder.brand_name.setOnClickListener(v -> {
+        holder.itemView.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Medicines_List_Activity.class)
                     .putExtra("category", "Brand Name"));
         });

@@ -1,6 +1,7 @@
 package com.example.medicare.Activities.Medicines.Md_Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.medicare.Activities.Medicines.Md_Activites.Product_Disc_Activity;
 import com.example.medicare.R;
 
 public class Daily_Deals_Adapter extends RecyclerView.Adapter<Daily_Deals_Adapter.MyviewHolder> {
@@ -29,6 +31,12 @@ public class Daily_Deals_Adapter extends RecyclerView.Adapter<Daily_Deals_Adapte
     @Override
     public void onBindViewHolder(@NonNull MyviewHolder holder, int position) {
         holder.old_price.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
+        holder.itemView
+                .setOnClickListener(v -> {
+                    context.startActivity(new Intent(context, Product_Disc_Activity.class));
+                });
+
 
     }
 

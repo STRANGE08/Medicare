@@ -208,7 +208,7 @@ public class Dr_Payment_Activity extends AppCompatActivity {
         RelativeLayout closebtn = customView.findViewById(R.id.closebtn);
         closebtn.setOnClickListener(view -> {
             mPopupWindow.dismiss();
-            startActivity(new Intent(Dr_Payment_Activity.this, My_Appointment_list_Activity.class)
+            startActivity(new Intent(Dr_Payment_Activity.this, Appointment_list_Activity.class)
                     .putExtra("from", "dr_payment"));
         });
 
