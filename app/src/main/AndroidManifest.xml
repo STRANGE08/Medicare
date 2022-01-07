@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medicare">
         <activity
+            android:name=".Activities.Doctor.Dr_Actvities.Rate_Doctor_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Doctor.Dr_Actvities.Appointment_summery_Activity"
             android:exported="false" />
         <activity

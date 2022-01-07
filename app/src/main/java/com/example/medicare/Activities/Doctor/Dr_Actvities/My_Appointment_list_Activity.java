@@ -25,6 +25,7 @@ public class My_Appointment_list_Activity extends AppCompatActivity {
 
 
         from = getIntent().getStringExtra("from");
+
         findViewById(R.id.back).setOnClickListener(v -> {
             if (from.equalsIgnoreCase("dr_payment")) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);

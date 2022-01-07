@@ -28,6 +28,9 @@ public class Schedule_Activity extends AppCompatActivity {
             startActivity(new Intent(Schedule_Activity.this, Dr_Payment_Activity.class));
         });
 
+        findViewById(R.id.back).setOnClickListener(v -> {
+            finish();
+        });
 
         btn_nineam = findViewById(R.id.btn_nineam);
         btn_twelve = findViewById(R.id.btn_twelve);

@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Medicines.Md_Activites.Rate_Review_Product_Activity">
+    tools:context=".Activities.Doctor.Dr_Actvities.Rate_Doctor_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:elevation="10dp">
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,8 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="Review Product"
-                android:textAllCaps="false"
+                android:text="Rate Doctor"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -49,12 +47,12 @@
         android:layout_height="1dp"
         android:background="@color/colorGrey" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:orientation="vertical">
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -67,16 +65,18 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/et_grey"
-                android:src="@drawable/prodcuts_image" />
+                android:src="@drawable/doctor" />
         </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:text="@string/product_name_demo"
+            android:text="Dr Stephen Strange"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -86,6 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            style="@style/RatingBar"
             android:layout_marginTop="20dp" />
 
 
@@ -96,7 +97,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/address_et_background"
             android:gravity="top"
-            android:hint="Give review about product"
+            android:hint="Give review about doctor"
             android:minLines="5"
             android:padding="10dp"
             android:textColor="@color/black"
