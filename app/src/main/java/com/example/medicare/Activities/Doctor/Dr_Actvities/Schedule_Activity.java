@@ -23,9 +23,19 @@ public class Schedule_Activity extends AppCompatActivity {
         CalendarView calendarView = findViewById(R.id.calendarView);
         calendarView.setMinDate(System.currentTimeMillis());
 
+        String from=getIntent().getStringExtra("from");
+
 
         findViewById(R.id.cnf_appointment_btn).setOnClickListener(v -> {
-            startActivity(new Intent(Schedule_Activity.this, Dr_Payment_Activity.class));
+            if (from.equalsIgnoreCase("patient_details")){
+
+                startActivity(new Intent(Schedule_Activity.this, Dr_Payment_Activity.class));
+
+            }else if (from.equalsIgnoreCase("appointment")){
+
+                startActivity(new Intent(Schedule_Activity.this, Appointment_summery_Activity.class));
+
+            }
         });
 
         findViewById(R.id.back).setOnClickListener(v -> {

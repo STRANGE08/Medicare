@@ -80,5 +80,14 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         rate_review_tv.setOnClickListener(v -> {
             startActivity(new Intent(Appointment_summery_Activity.this, Rate_Doctor_Activity.class));
         });
+
+
+        change_date_tv.setOnClickListener(v -> {
+            startActivity(
+                    new Intent(
+                            Appointment_summery_Activity.this, Schedule_Activity.class)
+                            .putExtra("from", "appointment"));
+
+        });
     }
 }

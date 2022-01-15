@@ -190,17 +190,17 @@
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/change_date_tv"
-                                android:layout_width="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_centerVertical="true"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:text="Change Date"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/change_date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Change Date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/rate_review_tv"
