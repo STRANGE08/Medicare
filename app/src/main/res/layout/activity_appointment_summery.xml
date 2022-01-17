@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Doctor.Dr_Actvities.Appointment_summery_Activity">
+    android:id="@+id/summery_layout"
+    tools:context=".Activities.Appointment_summery_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -370,17 +371,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/go_to_main2"
-                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
                     android:layout_marginVertical="30dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
                     app:cardElevation="1dp">
 
                     <TextView
@@ -443,14 +444,15 @@
                     android:id="@+id/cancel_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginStart="10dp"
                     android:layout_marginVertical="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
                     app:cardElevation="1dp">
 
                     <TextView
-                        android:id="@+id/cancel_tv"
+                        android:id="@+id/cancel_appointment_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/red"

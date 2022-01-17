@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.medicare.Activities.Appointment_summery_Activity;
 import com.example.medicare.R;
 
 public class Dr_Schedule_Activity extends AppCompatActivity {
@@ -23,15 +24,15 @@ public class Dr_Schedule_Activity extends AppCompatActivity {
         CalendarView calendarView = findViewById(R.id.calendarView);
         calendarView.setMinDate(System.currentTimeMillis());
 
-        String from=getIntent().getStringExtra("from");
+        String from = getIntent().getStringExtra("from");
 
 
         findViewById(R.id.cnf_appointment_btn).setOnClickListener(v -> {
-            if (from.equalsIgnoreCase("patient_details")){
+            if (from.equalsIgnoreCase("patient_details")) {
 
                 startActivity(new Intent(Dr_Schedule_Activity.this, Dr_Payment_Activity.class));
 
-            }else if (from.equalsIgnoreCase("appointment")){
+            } else if (from.equalsIgnoreCase("appointment")) {
 
                 startActivity(new Intent(Dr_Schedule_Activity.this, Appointment_summery_Activity.class));
 

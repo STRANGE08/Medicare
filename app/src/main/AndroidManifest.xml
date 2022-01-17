@@ -22,10 +22,10 @@
             android:name=".Activities.Doctor.Dr_Actvities.Rate_Doctor_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Doctor.Dr_Actvities.Appointment_summery_Activity"
+            android:name=".Activities.Appointment_summery_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Doctor.Dr_Actvities.Appointment_list_Activity"
+            android:name=".Activities.Appointment_list_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Doctor.Dr_Actvities.Dr_Payment_Activity"

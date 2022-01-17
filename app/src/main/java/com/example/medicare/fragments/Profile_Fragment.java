@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Appointment_list_Activity;
+import com.example.medicare.Activities.Appointment_list_Activity;
 import com.example.medicare.Activities.Edit_Profile_Activity;
 import com.example.medicare.Activities.Medicines.Md_Activites.Order_History_Activity;
 import com.example.medicare.Activities.Settings_Activity;

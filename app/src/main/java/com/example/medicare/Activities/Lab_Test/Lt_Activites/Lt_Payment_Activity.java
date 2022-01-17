@@ -1,10 +1,6 @@
 package com.example.medicare.Activities.Lab_Test.Lt_Activites;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,8 +14,9 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Appointment_list_Activity;
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Dr_Payment_Activity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
 import com.example.medicare.R;
 
 public class Lt_Payment_Activity extends AppCompatActivity {
@@ -30,6 +27,7 @@ public class Lt_Payment_Activity extends AppCompatActivity {
     EditText card_expiry_et, card_no_et, upi_et;
     CardView pay_by_card, pay_by_upi, pay_by_wallet;
     private PopupWindow mPopupWindow;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +49,6 @@ public class Lt_Payment_Activity extends AppCompatActivity {
         wallet_tv = findViewById(R.id.wallet_tv);
         wallet_pay_layout = findViewById(R.id.wallet_pay_layout);
         pay_by_wallet = findViewById(R.id.pay_by_wallet);
-
 
 
         wallet_pay.setOnClickListener(v -> {

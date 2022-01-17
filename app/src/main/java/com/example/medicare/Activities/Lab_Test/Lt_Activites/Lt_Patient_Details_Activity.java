@@ -1,12 +1,10 @@
 package com.example.medicare.Activities.Lab_Test.Lt_Activites;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Dr_Schedule_Activity;
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Patient_Details_Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.medicare.R;
 
 public class Lt_Patient_Details_Activity extends AppCompatActivity {

@@ -52,6 +52,7 @@ public class Labtest_List_Adapter extends RecyclerView.Adapter<Labtest_List_Adap
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView old_price, package_name;
         CardView select_package;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             old_price = itemView.findViewById(R.id.old_price);

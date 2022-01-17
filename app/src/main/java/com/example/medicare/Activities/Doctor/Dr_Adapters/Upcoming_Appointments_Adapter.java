@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Appointment_summery_Activity;
+import com.example.medicare.Activities.Appointment_summery_Activity;
 import com.example.medicare.R;
 
 public class Upcoming_Appointments_Adapter extends RecyclerView.Adapter<Upcoming_Appointments_Adapter.MyViewHolder> {
@@ -42,10 +42,10 @@ public class Upcoming_Appointments_Adapter extends RecyclerView.Adapter<Upcoming
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 1;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         LinearLayout pending_layout, confirm_layout;
 
         public MyViewHolder(@NonNull View itemView) {

@@ -18,6 +18,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.medicare.Activities.Appointment_list_Activity;
 import com.example.medicare.R;
 
 public class Dr_Payment_Activity extends AppCompatActivity {

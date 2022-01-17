@@ -1,17 +1,30 @@
-package com.example.medicare.Activities.Doctor.Dr_Actvities;
+package com.example.medicare.Activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.medicare.Activities.Doctor.Dr_Actvities.Dr_Schedule_Activity;
+import com.example.medicare.Activities.Doctor.Dr_Actvities.Rate_Doctor_Activity;
 import com.example.medicare.R;
 
 public class Appointment_summery_Activity extends AppCompatActivity {
+    private PopupWindow mPopupWindow;
+    LinearLayout summery_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +32,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_appointment_summery);
 
         String status = getIntent().getStringExtra("status");
-
+        summery_layout = findViewById(R.id.summery_layout);
 
         LinearLayout for_others_layout = findViewById(R.id.for_others_layout);
         TextView cnf_tv = findViewById(R.id.cnf_tv);
@@ -28,6 +41,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         TextView canceled_tv = findViewById(R.id.canceled_tv);
         TextView change_date_tv = findViewById(R.id.change_date_tv);
         TextView rate_review_tv = findViewById(R.id.rate_review_tv);
+        TextView cancel_appointment_tv = findViewById(R.id.cancel_appointment_tv);
 
         CardView cancel_card = findViewById(R.id.cancel_card);
 
@@ -85,8 +99,59 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         change_date_tv.setOnClickListener(v -> {
             startActivity(
                     new Intent(
-                            Appointment_summery_Activity.this, Dr_Schedule_Activity.class)
+                                Appointment_summery_Activity.this, Dr_Schedule_Activity.class)
                             .putExtra("from", "appointment"));
+
+        });
+        cancel_appointment_tv.setOnClickListener(v -> {
+            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View customView = inflater.inflate(R.layout.cancel_appointment_layout, null);
+            mPopupWindow = new PopupWindow(customView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+            mPopupWindow.setElevation(5.0f);
+            mPopupWindow.setFocusable(true);
+
+            mPopupWindow.update();
+
+            mPopupWindow.showAtLocation(summery_layout, Gravity.CENTER, 0, 0);
+
+            TextView cancel_appointment = customView.findViewById(R.id.cancel_appointment);
+
+            EditText reason_et = customView.findViewById(R.id.reason_et);
+
+            reason_et.requestFocus();
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.showSoftInput(reason_et, InputMethodManager.SHOW_IMPLICIT);
+
+
+            RelativeLayout closebtn = customView.findViewById(R.id.closebtn);
+            closebtn.setOnClickListener(view -> {
+                mPopupWindow.dismiss();
+
+            });
+
+            cancel_appointment.setOnClickListener(v1 -> {
+                if (reason_et.getText().toString().equalsIgnoreCase("")) {
+                    Toast.makeText(
+                            Appointment_summery_Activity.this,
+                            "Please enter reason for cancellation",
+                            Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(
+                            Appointment_summery_Activity.this,
+                            "Appointment Canceled",
+                            Toast.LENGTH_SHORT).show();
+
+                    mPopupWindow.dismiss();
+                    canceled_tv.setVisibility(View.VISIBLE);
+                    complete_tv.setVisibility(View.GONE);
+                    cnf_tv.setVisibility(View.GONE);
+                    pending_tv.setVisibility(View.GONE);
+                    for_others_layout.setVisibility(View.GONE);
+                    change_date_tv.setVisibility(View.GONE);
+                    cancel_card.setVisibility(View.GONE);
+                }
+
+            });
 
         });
     }

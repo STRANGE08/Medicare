@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Activities.Doctor.Dr_Actvities.Appointment_summery_Activity;
+import com.example.medicare.Activities.Appointment_summery_Activity;
 import com.example.medicare.R;
 
 public class Past_Appointment_Adapter extends RecyclerView.Adapter<Past_Appointment_Adapter.MyViewHolder> {

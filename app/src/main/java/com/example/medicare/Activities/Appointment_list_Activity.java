@@ -1,4 +1,4 @@
-package com.example.medicare.Activities.Doctor.Dr_Actvities;
+package com.example.medicare.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
