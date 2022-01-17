@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medicare">
         <activity
+            android:name=".Activities.Lab_Test.Lt_Activites.Lt_Patient_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Lab_Test.Lt_Activites.Lt_Payment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Lab_Test.Lt_Activites.Lt_Schedule_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Doctor.Dr_Actvities.Rate_Doctor_Activity"
             android:exported="false" />
         <activity
@@ -28,7 +37,7 @@
             android:name=".Activities.Wallet_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Doctor.Dr_Actvities.Schedule_Activity"
+            android:name=".Activities.Doctor.Dr_Actvities.Dr_Schedule_Activity"
             android:exported="false" />
         <activity
             android:name=".Activities.Doctor.Dr_Actvities.Patient_Details_Activity"

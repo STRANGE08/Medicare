@@ -20,7 +20,7 @@ public class Patient_Details_Activity extends AppCompatActivity {
         findViewById(R.id.book_appointment_btn).setOnClickListener(v -> {
             startActivity(
                     new Intent(
-                            Patient_Details_Activity.this, Schedule_Activity.class)
+                            Patient_Details_Activity.this, Dr_Schedule_Activity.class)
                             .putExtra("from", "patient_details"));
         });
     }

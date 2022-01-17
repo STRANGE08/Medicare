@@ -1,6 +1,7 @@
 package com.example.medicare.Activities.Lab_Test.Lt_Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.medicare.Activities.Lab_Test.Lt_Activites.Package_Details_Activity;
 import com.example.medicare.R;
 
 public class Popular_labtest_Adapter extends RecyclerView.Adapter<Popular_labtest_Adapter.MyViewHolder> {
@@ -33,6 +35,12 @@ public class Popular_labtest_Adapter extends RecyclerView.Adapter<Popular_labtes
         holder.old_price2.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         holder.old_price3.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         holder.old_price4.setPaintFlags(holder.old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
+
+        holder.itemView.setOnClickListener(v -> {
+            context.startActivity(new Intent(context, Package_Details_Activity.class)
+                    .putExtra("type", "labtest"));
+        });
 
     }
 

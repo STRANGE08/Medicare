@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.medicare.R;
 
-public class Schedule_Activity extends AppCompatActivity {
+public class Dr_Schedule_Activity extends AppCompatActivity {
     RelativeLayout btn_nineam, btn_twelve, btn_three, btn_fivepm, btn_sixpm, btn_eightpm;
     TextView tv_9am, tv_1230pm, tv_8pm, tv_6pm, tv_5pm, tv_3pm;
 
@@ -29,11 +29,11 @@ public class Schedule_Activity extends AppCompatActivity {
         findViewById(R.id.cnf_appointment_btn).setOnClickListener(v -> {
             if (from.equalsIgnoreCase("patient_details")){
 
-                startActivity(new Intent(Schedule_Activity.this, Dr_Payment_Activity.class));
+                startActivity(new Intent(Dr_Schedule_Activity.this, Dr_Payment_Activity.class));
 
             }else if (from.equalsIgnoreCase("appointment")){
 
-                startActivity(new Intent(Schedule_Activity.this, Appointment_summery_Activity.class));
+                startActivity(new Intent(Dr_Schedule_Activity.this, Appointment_summery_Activity.class));
 
             }
         });

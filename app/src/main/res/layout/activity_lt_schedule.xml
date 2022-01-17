@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activities.Doctor.Dr_Actvities.Dr_Schedule_Activity">
-
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Lab_Test.Lt_Activites.Lt_Schedule_Activity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -158,20 +157,11 @@
                 android:layout_marginHorizontal="10dp"
                 android:padding="10dp">
 
-                <androidx.cardview.widget.CardView
-                    app:cardElevation="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="5dp"
-                    app:cardCornerRadius="10dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@color/et_grey"
-                        android:padding="10dp"
-                        android:src="@drawable/doctor" />
-                </androidx.cardview.widget.CardView>
+                <com.pkmmte.view.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/labtest_offer_banner2" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -181,43 +171,11 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Dr. Stephan Strange"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:layout_centerVertical="true"
-                            android:layout_toLeftOf="@+id/total_rating"
-                            android:src="@drawable/star" />
-
-                        <TextView
-                            android:id="@+id/total_rating"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:text="4.5"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
                     <TextView
+                        android:id="@+id/package_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Neurosurgeon"
+                        android:text="Comprehensive Full Body checkup with Vitamin D &amp; B12"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -462,7 +420,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/cnf_appointment_btn"
+                android:id="@+id/cnf_schedule_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

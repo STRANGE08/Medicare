@@ -1,5 +1,6 @@
 package com.example.medicare.Activities.Lab_Test.Lt_Activites;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -29,6 +31,7 @@ public class Package_Details_Activity extends AppCompatActivity {
     LinearLayout test_requirements;
     ImageView down_arrow, up_arrow;
     RelativeLayout included_layout;
+    CardView select_package;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,9 @@ public class Package_Details_Activity extends AppCompatActivity {
         down_arrow = findViewById(R.id.down_arrow);
         up_arrow = findViewById(R.id.up_arrow);
         old_price = findViewById(R.id.old_price);
+        select_package = findViewById(R.id.select_package);
+
+
         old_price.setPaintFlags(old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         tabLayout.addTab(tabLayout.newTab().setText("Description"));
         tabLayout.addTab(tabLayout.newTab().setText("Test Requirement"));
@@ -112,6 +118,13 @@ public class Package_Details_Activity extends AppCompatActivity {
             up_arrow.setVisibility(View.GONE);
             down_arrow.setVisibility(View.VISIBLE);
             included_tests_recycler.setVisibility(View.GONE);
+
+        });
+        select_package.setOnClickListener(v -> {
+
+            startActivity(
+                    new Intent(
+                            Package_Details_Activity.this, Lt_Patient_Details_Activity.class));
 
         });
 

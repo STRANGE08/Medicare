@@ -10,8 +10,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.medicare.Activities.Lab_Test.Lt_Activites.Lt_Patient_Details_Activity;
 import com.example.medicare.Activities.Lab_Test.Lt_Activites.Package_Details_Activity;
 import com.example.medicare.R;
 
@@ -36,6 +38,9 @@ public class Health_packages_Adapter extends RecyclerView.Adapter<Health_package
             context.startActivity(new Intent(context, Package_Details_Activity.class)
                     .putExtra("type", "package"));
         });
+        holder.select_package.setOnClickListener(v -> {
+            context.startActivity(new Intent(context, Lt_Patient_Details_Activity.class));
+        });
     }
 
     @Override
@@ -47,10 +52,13 @@ public class Health_packages_Adapter extends RecyclerView.Adapter<Health_package
         TextView old_price, package_name;
         LinearLayout mLinear_layout;
 
+        CardView select_package;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             old_price = itemView.findViewById(R.id.old_price);
             package_name = itemView.findViewById(R.id.package_name);
+            select_package = itemView.findViewById(R.id.select_package);
         }
     }
 }

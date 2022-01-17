@@ -63,24 +63,6 @@ public class MainActivity extends AppCompatActivity {
             bottomNavigationView.setSelectedItemId(R.id.labtest);
         }
 
-//        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-//            if (item.getItemId() == R.id.home) {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentcontainer, new Home_Fragment()).commit();
-//            }
-//            if (item.getItemId() == R.id.map_doctor) {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentcontainer, new Doctor_Fragment()).commit();
-//            }
-//            if (item.getItemId() == R.id.notification) {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentcontainer, new Notification_Fragment()).commit();
-//            }
-//            if (item.getItemId() == R.id.labtest) {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentcontainer, new LabTest_Fragment()).commit();
-//            }
-//            if (item.getItemId() == R.id.profile) {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentcontainer, new Profile_Fragment()).commit();
-//            }
-//            return true;
-//        });
 
     }
 }

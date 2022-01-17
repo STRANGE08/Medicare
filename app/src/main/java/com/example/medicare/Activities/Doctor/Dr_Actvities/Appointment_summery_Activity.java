@@ -85,7 +85,7 @@ public class Appointment_summery_Activity extends AppCompatActivity {
         change_date_tv.setOnClickListener(v -> {
             startActivity(
                     new Intent(
-                            Appointment_summery_Activity.this, Schedule_Activity.class)
+                            Appointment_summery_Activity.this, Dr_Schedule_Activity.class)
                             .putExtra("from", "appointment"));
 
         });

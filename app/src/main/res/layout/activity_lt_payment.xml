@@ -2,13 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:id="@+id/checkout_layout"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context=".Activities.Doctor.Dr_Actvities.Dr_Payment_Activity">
-
+    tools:context=".Activities.Lab_Test.Lt_Activites.Lt_Payment_Activity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -68,20 +67,11 @@
                 android:layout_marginHorizontal="10dp"
                 android:padding="10dp">
 
-                <androidx.cardview.widget.CardView
-                    app:cardElevation="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="5dp"
-                    app:cardCornerRadius="10dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:background="@color/et_grey"
-                        android:padding="10dp"
-                        android:src="@drawable/doctor" />
-                </androidx.cardview.widget.CardView>
+                <com.pkmmte.view.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/labtest_offer_banner2" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -91,46 +81,15 @@
                     android:layout_gravity="center_vertical"
                     android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Dr. Stephan Strange"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:layout_centerVertical="true"
-                            android:layout_toLeftOf="@+id/total_rating"
-                            android:src="@drawable/star" />
-
-                        <TextView
-                            android:id="@+id/total_rating"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="5dp"
-                            android:text="4.5"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <TextView
+                        android:id="@+id/package_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Neurosurgeon"
+                        android:text="Comprehensive Full Body checkup with Vitamin D &amp; B12"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
@@ -184,7 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:text="₹200"
+                    android:text="₹1399"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -328,7 +287,7 @@
                         android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="Pay  ₹200"
+                        android:text="Pay  ₹1399"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="18sp"
@@ -434,7 +393,7 @@
                         android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="Pay  ₹200"
+                        android:text="Pay  ₹1399"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="18sp"
@@ -560,7 +519,7 @@
                         android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="Pay  ₹200"
+                        android:text="Pay  ₹1399"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="18sp"
@@ -571,6 +530,5 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
 
 </LinearLayout>
