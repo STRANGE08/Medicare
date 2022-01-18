@@ -128,5 +128,9 @@ public class Package_Details_Activity extends AppCompatActivity {
 
         });
 
+
+        findViewById(R.id.back).setOnClickListener(v -> {
+            finish();
+        });
     }
 }

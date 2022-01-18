@@ -39,9 +39,7 @@ public class Dr_Schedule_Activity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.back).setOnClickListener(v -> {
-            finish();
-        });
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
         btn_nineam = findViewById(R.id.btn_nineam);
         btn_twelve = findViewById(R.id.btn_twelve);

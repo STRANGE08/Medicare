@@ -74,7 +74,7 @@
             app:hideLineWhenFilled="false"
             app:itemCount="6"
             app:itemHeight="48dp"
-            app:itemRadius="5dp"
+            app:itemRadius="10dp"
             app:itemSpacing="10dp"
             app:itemWidth="48dp"
             app:lineColor="@color/primary_glow"

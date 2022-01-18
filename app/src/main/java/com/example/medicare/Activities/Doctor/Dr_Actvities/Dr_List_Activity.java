@@ -26,9 +26,7 @@ public class Dr_List_Activity extends AppCompatActivity {
         offers_recycler
                 .setAdapter(new Popular_Dr_Adapter(Dr_List_Activity.this));
 
-        findViewById(R.id.back).setOnClickListener(v -> {
-            finish();
-        });
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
     }
 }

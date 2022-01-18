@@ -16,6 +16,10 @@ public class Popular_Dr_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popular_dr);
 
+        findViewById(R.id.back).setOnClickListener(v -> {
+            finish();
+        });
+
         RecyclerView popular_dr_recycler = findViewById(R.id.popular_dr_recycler);
         popular_dr_recycler
                 .setLayoutManager(

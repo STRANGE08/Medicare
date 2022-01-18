@@ -57,21 +57,41 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <EditText
-                android:id="@+id/amount_to_add_et"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/address_et_background"
-                android:imeOptions="actionDone"
-                android:inputType="number"
                 android:padding="10dp"
-                android:text="₹1000"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/amount_to_add_et"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingVertical="10dp"
+                    android:text="1000"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
 
             <HorizontalScrollView
@@ -96,14 +116,15 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="15dp">
 
                         <TextView
                             android:id="@+id/hundred_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
                             android:text="₹100"
+                            android:layout_gravity="center_horizontal"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -116,13 +137,14 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="15dp">
 
                         <TextView
                             android:id="@+id/five_hundred_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_horizontal"
                             android:text="₹500"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -136,14 +158,15 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="15dp">
 
 
                         <TextView
                             android:id="@+id/thousand_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_horizontal"
                             android:text="₹1000"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -157,14 +180,15 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="15dp">
 
 
                         <TextView
                             android:id="@+id/two_thousand_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_horizontal"
                             android:text="₹2000"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -178,14 +202,15 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="15dp">
 
 
                         <TextView
                             android:id="@+id/five_thousand_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_horizontal"
                             android:text="₹5000"
                             android:textColor="@color/black" />
                     </LinearLayout>

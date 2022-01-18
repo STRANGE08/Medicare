@@ -26,7 +26,7 @@ public class Dr_Details_Activity extends AppCompatActivity {
         less_info_view = findViewById(R.id.less_info_view);
         online_cons_btn = findViewById(R.id.online_cons_btn);
         book_appointment_btn = findViewById(R.id.book_appointment_btn);
-
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
         more_info_view.setOnClickListener(v -> {
             more_info_layout.setVisibility(View.VISIBLE);
@@ -38,15 +38,12 @@ public class Dr_Details_Activity extends AppCompatActivity {
             more_info_view.setVisibility(View.VISIBLE);
             less_info_view.setVisibility(View.GONE);
         });
-        book_appointment_btn.setOnClickListener(v -> {
-            startActivity(new Intent(
-                    Dr_Details_Activity.this, Patient_Details_Activity.class)
-                    .putExtra("from", "Dr_Details"));
-        });
-        online_cons_btn.setOnClickListener(v -> {
-            startActivity(new Intent(
-                    Dr_Details_Activity.this, Patient_Details_Activity.class));
-        });
+        book_appointment_btn.setOnClickListener(v -> startActivity(new Intent(
+                Dr_Details_Activity.this, Patient_Details_Activity.class)
+                .putExtra("from", "Dr_Details")));
+
+        online_cons_btn.setOnClickListener(v -> startActivity(new Intent(
+                Dr_Details_Activity.this, Patient_Details_Activity.class)));
 
 
     }

@@ -19,9 +19,7 @@ public class Patient_Details_Activity extends AppCompatActivity {
         String from = getIntent().getStringExtra("from");
 
 
-        findViewById(R.id.back).setOnClickListener(v -> {
-            finish();
-        });
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
         findViewById(R.id.book_appointment_btn).setOnClickListener(v -> {
             if (from.equalsIgnoreCase("Dr_Details")) {

@@ -190,9 +190,7 @@ public class Dr_Payment_Activity extends AppCompatActivity {
         });
 
 
-        findViewById(R.id.back).setOnClickListener(v -> {
-            finish();
-        });
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
     }
 
@@ -206,8 +204,8 @@ public class Dr_Payment_Activity extends AppCompatActivity {
 
         mPopupWindow.showAtLocation(checkout_layout, Gravity.CENTER, 0, 0);
 
-        RelativeLayout closebtn = customView.findViewById(R.id.closebtn);
-        closebtn.setOnClickListener(view -> {
+        RelativeLayout close_btn = customView.findViewById(R.id.closebtn);
+        close_btn.setOnClickListener(view -> {
             mPopupWindow.dismiss();
             startActivity(new Intent(Dr_Payment_Activity.this, Appointment_list_Activity.class)
                     .putExtra("from", "dr_payment"));

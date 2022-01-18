@@ -29,6 +29,9 @@ public class Medicine_Cart_Activity extends AppCompatActivity {
         TextView old_price = findViewById(R.id.old_price);
         old_price.setPaintFlags(old_price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
+        TextView delivery_charges = findViewById(R.id.delivery_charges);
+        delivery_charges.setPaintFlags(delivery_charges.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
         RecyclerView cart_item_recycler = findViewById(R.id.cart_item_recycler);
         cart_item_recycler
                 .setLayoutManager(

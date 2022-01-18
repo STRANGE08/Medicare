@@ -18,6 +18,11 @@ public class Lab_test_Packages_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_packages);
 
+
+        findViewById(R.id.back).setOnClickListener(v -> {
+            finish();
+        });
+
         TextView test_category_name_tv = findViewById(R.id.test_category_name_tv);
         String name = getIntent().getStringExtra("name");
 

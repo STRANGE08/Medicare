@@ -60,13 +60,15 @@ public class Add_Balance_Activity extends AppCompatActivity {
             finish();
             Toast.makeText(Add_Balance_Activity.this, "Balance added successfully", Toast.LENGTH_SHORT).show();
         });
+
         pay_by_upi.setOnClickListener(v -> {
             Toast.makeText(Add_Balance_Activity.this, "Balance added successfully", Toast.LENGTH_SHORT).show();
             finish();
         });
+
         upi_pay.setOnClickListener(v -> {
             if (!amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
-                amount_upi_add_tv.setText("Add " + amount_to_add_et.getText().toString());
+                amount_upi_add_tv.setText("Add ₹" + amount_to_add_et.getText().toString());
 
                 upi_pay.setBackgroundResource(R.drawable.address_et_background2);
                 upi_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
@@ -75,13 +77,11 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 upi_pay_layout.setVisibility(View.VISIBLE);
                 card_details_layout.setVisibility(View.GONE);
             }
-
-
         });
 
         card_pay.setOnClickListener(v -> {
             if (!amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
-                amount_card_add_tv.setText("Add " + amount_to_add_et.getText().toString());
+                amount_card_add_tv.setText("Add ₹" + amount_to_add_et.getText().toString());
 
                 card_pay.setBackgroundResource(R.drawable.address_et_background2);
                 card_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
@@ -90,8 +90,6 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 card_details_layout.setVisibility(View.VISIBLE);
                 upi_pay_layout.setVisibility(View.GONE);
             }
-
-
         });
 
 
@@ -117,28 +115,28 @@ public class Add_Balance_Activity extends AppCompatActivity {
         hundred.setOnClickListener(v -> {
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 100;
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             } else {
 
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 100;
 
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             }
         });
         five_hundred.setOnClickListener(v -> {
 
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 500;
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             } else {
 
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 500;
 
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             }
 
         });
@@ -146,14 +144,14 @@ public class Add_Balance_Activity extends AppCompatActivity {
 
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 1000;
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             } else {
 
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 1000;
 
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             }
 
         });
@@ -161,28 +159,28 @@ public class Add_Balance_Activity extends AppCompatActivity {
 
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 2000;
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             } else {
 
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 2000;
 
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             }
 
         });
         five_thousand.setOnClickListener(v -> {
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 5000;
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             } else {
 
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 5000;
 
-                amount_to_add_et.setText("₹" + new_amount);
+                amount_to_add_et.setText("" + new_amount);
             }
         });
 
@@ -208,6 +206,7 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 }
             }
         });
+
         card_no_et.addTextChangedListener(new TextWatcher() {
             int prevL = 0;
 
@@ -229,8 +228,5 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 }
             }
         });
-
     }
-
-
 }
