@@ -29,6 +29,12 @@ public class Past_Order_Adapter extends RecyclerView.Adapter<Past_Order_Adapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+
+        holder.itemView.setOnClickListener(v -> {
+            context.startActivity(new Intent(context, Track_Order_details_Activity.class)
+                    .putExtra("status", "delivered"));
+        });
+
         holder.track_order_tv.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Track_Order_details_Activity.class)
                     .putExtra("status", "delivered"));

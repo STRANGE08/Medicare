@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="10dp"
     android:paddingVertical="5dp">
 
     <LinearLayout
@@ -41,8 +40,8 @@
 
                 <ImageView
                     android:id="@+id/delete_item"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
                     android:layout_marginHorizontal="10dp"
                     android:src="@drawable/delete" />
 
@@ -57,14 +56,14 @@
 
                 <LinearLayout
                     android:id="@+id/total_items_layout"
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/round_edittext_background"
                     android:backgroundTint="@color/colorPrimary"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:paddingHorizontal="5dp">
 
                     <TextView
                         android:id="@+id/plus_item"
@@ -72,11 +71,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimary"
                         android:gravity="center_horizontal"
                         android:text="+"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="normal" />
 
                     <TextView
@@ -88,7 +86,7 @@
                         android:gravity="center_horizontal"
                         android:text="3"
                         android:textColor="@color/white"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -97,12 +95,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimary"
                         android:gravity="center_horizontal"
-                        android:paddingVertical="1dp"
                         android:text="-"
                         android:textColor="@color/white"
-                        android:textSize="25sp"
+                        android:textSize="24sp"
                         android:textStyle="normal" />
                 </LinearLayout>
 
@@ -124,9 +120,9 @@
                             android:id="@+id/old_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹450"
+                            android:text="₹950"
                             android:textColor="@color/grey"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <androidx.cardview.widget.CardView
@@ -143,7 +139,7 @@
                                 android:gravity="center_horizontal"
                                 android:text="50% off"
                                 android:textColor="@color/white"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold" />
                         </androidx.cardview.widget.CardView>
 
@@ -153,9 +149,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="₹280.95"
+                        android:text="₹475"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
 

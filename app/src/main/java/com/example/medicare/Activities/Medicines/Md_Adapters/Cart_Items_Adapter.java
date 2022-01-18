@@ -1,4 +1,4 @@
-package com.example.medicare.Adapters;
+package com.example.medicare.Activities.Medicines.Md_Adapters;
 
 import android.content.Context;
 import android.graphics.Paint;

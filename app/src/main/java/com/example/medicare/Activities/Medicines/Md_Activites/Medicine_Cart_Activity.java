@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.medicare.Adapters.Cart_Items_Adapter;
+import com.example.medicare.Activities.Medicines.Md_Adapters.Cart_Items_Adapter;
 import com.example.medicare.Adapters.Offer_Code_Adapter;
 import com.example.medicare.R;
 

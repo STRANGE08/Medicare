@@ -187,7 +187,7 @@
                                 android:id="@+id/old_price"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="₹4150"
+                                android:text="₹2850"
                                 android:textColor="@color/grey"
                                 android:textSize="14sp"
                                 android:textStyle="normal" />
@@ -196,7 +196,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                android:text="₹2634.35"
+                                android:text="₹1425"
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -270,7 +270,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
-                            android:text="₹2634.35"
+                            android:text="₹1425"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -289,7 +289,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Total saving of ₹263 on this order"
+                            android:text="Total saving of ₹1500 on this order"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -303,7 +303,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:text="MRP Discount 18%"
+                                android:text="MRP Discount 50%"
                                 android:textColor="@color/colorPrimary"
                                 android:textSize="14sp"
                                 android:textStyle="normal" />
@@ -313,7 +313,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:text="₹188"
+                                android:text="₹1425"
                                 android:textColor="@color/colorPrimary"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />

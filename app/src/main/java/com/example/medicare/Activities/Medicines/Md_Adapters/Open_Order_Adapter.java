@@ -30,6 +30,11 @@ public class Open_Order_Adapter extends RecyclerView.Adapter<Open_Order_Adapter.
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
+        holder.itemView.setOnClickListener(v -> {
+            context.startActivity(new Intent(context, Track_Order_details_Activity.class)
+                    .putExtra("status", "open"));
+        });
+
         holder.track_order_tv.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Track_Order_details_Activity.class)
                     .putExtra("status", "open"));
