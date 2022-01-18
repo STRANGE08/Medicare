@@ -154,8 +154,8 @@
                         android:layout_height="60dp"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/tests_yello"
-                        app:cardElevation="1dp"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -195,10 +195,10 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="100dp"
                         android:layout_height="60dp"
-                        app:cardElevation="1dp"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/dr_orange"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -237,11 +237,11 @@
             <!--                android:layout_gravity="center_horizontal"-->
             <!--                android:layout_marginTop="30dp" />-->
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="10dp"
                 android:id="@+id/offers2_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
 
             <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
                 android:id="@+id/offers2_Indicator"
@@ -250,6 +250,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 app:spi_dotSelectedColor="@color/colorPrimary" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -302,10 +303,10 @@
 
                 <LinearLayout
                     android:id="@+id/covid_essential"
-                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -341,11 +342,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/devices"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -381,11 +382,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/nutritions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -421,11 +422,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/personal_care"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -470,11 +471,11 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/ayurvedic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -510,11 +511,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/baby_mom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -550,11 +551,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/skin_care"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -590,11 +591,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_weight="1"
                     android:id="@+id/more_medicine_ctgry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@color/transperent"
                     android:orientation="vertical">
 
@@ -613,9 +614,9 @@
 
                             <ImageView
                                 android:layout_width="30dp"
+                                android:layout_height="30dp"
                                 android:layout_centerHorizontal="true"
                                 android:layout_centerVertical="true"
-                                android:layout_height="30dp"
                                 android:src="@drawable/arrow" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>

@@ -304,13 +304,13 @@
 
 
                 <LinearLayout
-                    android:visibility="gone"
                     android:id="@+id/wallet_pay_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginTop="20dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -323,10 +323,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:text="You have ₹3954.35 in your wallet"
                         android:textColor="@color/black"
-                        android:textStyle="normal"
-                        android:layout_marginTop="20dp"/>
+                        android:textStyle="normal" />
 
 
                     <androidx.cardview.widget.CardView

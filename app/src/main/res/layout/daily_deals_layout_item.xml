@@ -47,8 +47,8 @@
             android:id="@+id/old_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
             android:text="MRP  ₹450"
             android:textColor="@color/grey"
             android:textSize="14sp" />
@@ -56,8 +56,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -79,8 +79,8 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:background="@color/tomato"
-                    android:text="50% off"
                     android:gravity="center_horizontal"
+                    android:text="50% off"
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     android:textStyle="bold" />

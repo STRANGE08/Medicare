@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Doctor"
+                    android:text="Lab"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -91,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Dr. Stephen Strange"
+                    android:text="Dr. B Lal Multispecialty ..."
                     android:textColor="@color/charcoal"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -120,7 +120,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Appointment Type"
+                    android:text="Type"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -129,7 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Neurosurgeon"
+                    android:text="Lab Test"
                     android:textColor="@color/charcoal"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -296,7 +296,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Appointment Type"
+                    android:text="Type"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />

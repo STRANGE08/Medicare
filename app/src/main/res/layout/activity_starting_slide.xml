@@ -70,7 +70,5 @@
             app:tint="@color/grey" />
 
 
-
-
     </RelativeLayout>
 </RelativeLayout>

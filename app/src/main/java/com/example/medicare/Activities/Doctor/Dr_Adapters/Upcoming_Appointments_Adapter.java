@@ -32,11 +32,13 @@ public class Upcoming_Appointments_Adapter extends RecyclerView.Adapter<Upcoming
 
         holder.confirm_layout.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Appointment_summery_Activity.class)
-                    .putExtra("status", "confirm"));
+                    .putExtra("status", "confirm")
+                    .putExtra("type","lab_test"));
         });
         holder.pending_layout.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Appointment_summery_Activity.class)
-                    .putExtra("status", "pending"));
+                    .putExtra("status", "pending")
+                    .putExtra("type","doctor"));
         });
     }
 

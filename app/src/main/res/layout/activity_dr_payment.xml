@@ -62,18 +62,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/category_background"
                 android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="10dp"
                 android:padding="10dp">
 
                 <androidx.cardview.widget.CardView
-                    app:cardElevation="1dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="5dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
 
                     <ImageView
                         android:layout_width="80dp"
@@ -86,9 +86,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center_vertical"
                     android:orientation="vertical">
 
                     <RelativeLayout
@@ -131,6 +131,7 @@
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"

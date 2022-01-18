@@ -60,9 +60,7 @@
             app:border_color="@color/et_grey"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-
-            />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_one"
@@ -72,29 +70,21 @@
             app:cardElevation="1dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/doctor_imag"
-
-            >
+            app:layout_constraintTop_toBottomOf="@+id/doctor_imag">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:padding="5dp"
-
-
-                >
+                android:padding="5dp">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="5dp"
-
-
-                    >
+                    android:padding="5dp">
 
 
                     <LinearLayout

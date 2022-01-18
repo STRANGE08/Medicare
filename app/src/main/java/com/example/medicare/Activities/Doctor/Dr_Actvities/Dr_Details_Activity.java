@@ -40,7 +40,8 @@ public class Dr_Details_Activity extends AppCompatActivity {
         });
         book_appointment_btn.setOnClickListener(v -> {
             startActivity(new Intent(
-                    Dr_Details_Activity.this, Patient_Details_Activity.class));
+                    Dr_Details_Activity.this, Patient_Details_Activity.class)
+                    .putExtra("from", "Dr_Details"));
         });
         online_cons_btn.setOnClickListener(v -> {
             startActivity(new Intent(

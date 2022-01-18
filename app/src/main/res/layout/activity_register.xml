@@ -87,8 +87,8 @@
                 android:layout_weight="1"
                 android:background="@color/et_grey"
                 android:hint="Stephen Strange"
-                android:inputType="text"
                 android:imeOptions="actionDone"
+                android:inputType="text"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey"
@@ -136,8 +136,8 @@
                 android:layout_weight="1"
                 android:background="@color/et_grey"
                 android:hint="strange@example.com"
-                android:inputType="textEmailAddress"
                 android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey"
@@ -191,9 +191,9 @@
                 android:layout_weight="1"
                 android:background="@color/et_grey"
                 android:hint="Mobile Number"
-                android:maxLength="10"
-                android:inputType="number"
                 android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey"
@@ -229,10 +229,10 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/go_to_otp"
             android:layout_width="match_parent"
-            app:cardElevation="1dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="15dp"
+            app:cardElevation="1dp">
 
             <TextView
                 android:layout_width="match_parent"

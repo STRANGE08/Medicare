@@ -410,20 +410,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginHorizontal="15dp"
-            android:padding="5dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/address_et_background"
-            android:layout_marginTop="30dp">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
+                android:background="@color/white"
                 android:hint="Enter Promocode"
                 android:paddingHorizontal="20dp"
-                android:background="@color/white"
                 android:paddingVertical="15dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey"
@@ -434,8 +434,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="10dp"
-                android:text="Apply"
                 android:padding="10dp"
+                android:text="Apply"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14sp"
                 android:textStyle="bold" />

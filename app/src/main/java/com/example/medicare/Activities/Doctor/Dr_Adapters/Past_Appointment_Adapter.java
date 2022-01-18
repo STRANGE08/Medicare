@@ -33,20 +33,22 @@ public class Past_Appointment_Adapter extends RecyclerView.Adapter<Past_Appointm
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.complete_layout.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Appointment_summery_Activity.class)
-                    .putExtra("status", "complete"));
+                    .putExtra("status", "complete")
+                    .putExtra("type","lab_test"));
         });
         holder.canceled_layout.setOnClickListener(v -> {
             context.startActivity(new Intent(context, Appointment_summery_Activity.class)
-                    .putExtra("status", "canceled"));
+                    .putExtra("status", "canceled")
+                    .putExtra("type","doctor"));
         });
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 3;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         LinearLayout canceled_layout, complete_layout;
 
         public MyViewHolder(@NonNull View itemView) {

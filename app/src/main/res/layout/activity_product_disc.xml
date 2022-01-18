@@ -57,13 +57,13 @@
                     android:id="@+id/total_item_incart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/circle"
+                    android:padding="1dp"
                     android:text="2"
                     android:textColor="@color/white"
                     android:textSize="11sp"
-                    android:padding="1dp"
-                    android:visibility="gone"
-                    android:background="@drawable/circle"
-                    android:layout_gravity="top|right" />
+                    android:visibility="gone" />
 
             </FrameLayout>
 
@@ -561,17 +561,17 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="more"
-                    android:visibility="gone"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:layout_width="20dp"
-                    android:visibility="gone"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/arrow" />
+                    android:src="@drawable/arrow"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
@@ -598,21 +598,21 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="more"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <ImageView
-                    android:visibility="gone"
                     android:layout_width="20dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/arrow" />
+                    android:src="@drawable/arrow"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
