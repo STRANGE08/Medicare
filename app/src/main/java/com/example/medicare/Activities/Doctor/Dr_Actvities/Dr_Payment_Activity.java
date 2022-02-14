@@ -24,7 +24,8 @@ import com.example.medicare.R;
 public class Dr_Payment_Activity extends AppCompatActivity {
     TextView upi_tv, card_tv, wallet_tv;
     LinearLayout card_pay, upi_pay, card_details_layout,
-            upi_pay_layout, paytm, okicici, ybl, checkout_layout, wallet_pay, wallet_pay_layout;
+            upi_pay_layout, paytm, okicici, ybl, checkout_layout, 
+            wallet_pay, wallet_pay_layout;
 
     EditText card_expiry_et, card_no_et, upi_et;
     CardView pay_by_card, pay_by_upi, pay_by_wallet;
@@ -51,6 +52,8 @@ public class Dr_Payment_Activity extends AppCompatActivity {
         wallet_tv = findViewById(R.id.wallet_tv);
         wallet_pay_layout = findViewById(R.id.wallet_pay_layout);
         pay_by_wallet = findViewById(R.id.pay_by_wallet);
+
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
 
         wallet_pay.setOnClickListener(v -> {
@@ -200,13 +203,11 @@ public class Dr_Payment_Activity extends AppCompatActivity {
         View customView = inflater.inflate(R.layout.item_appointment_cnflayout, null);
         mPopupWindow = new PopupWindow(customView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         mPopupWindow.setElevation(5.0f);
-        // Set a click listener for the popup window close button
-
         mPopupWindow.showAtLocation(checkout_layout, Gravity.CENTER, 0, 0);
 
         RelativeLayout close_btn = customView.findViewById(R.id.closebtn);
         close_btn.setOnClickListener(view -> {
-            mPopupWindow.dismiss();
+            mPopupWindow.dismiss();     
             startActivity(new Intent(Dr_Payment_Activity.this, Appointment_list_Activity.class)
                     .putExtra("from", "dr_payment"));
         });

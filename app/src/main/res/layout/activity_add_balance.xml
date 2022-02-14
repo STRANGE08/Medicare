@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:elevation="10dp">
+        android:elevation="@dimen/dp_10">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,21 +22,21 @@
 
             <ImageView
                 android:id="@+id/back"
-                android:layout_width="20dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_25"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/back_arrow"
                 app:tint="@color/black" />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="Add Balance to Wallet"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="@dimen/sp_16"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -45,7 +45,7 @@
     <View
         android:id="@+id/toolbar_view"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/dp_1"
         android:background="@color/colorGrey" />
 
     <androidx.core.widget.NestedScrollView
@@ -60,20 +60,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_25"
                 android:background="@drawable/address_et_background"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="₹"
-                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginHorizontal="@dimen/dp_5"
                     android:layout_gravity="center_vertical"
                     android:textStyle="normal"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/sp_14"
                     android:textColor="@color/black"/>
 
                 <EditText
@@ -84,7 +84,7 @@
                     android:background="@color/white"
                     android:imeOptions="actionDone"
                     android:inputType="number"
-                    android:paddingVertical="10dp"
+                    android:paddingVertical="@dimen/dp_10"
                     android:text="1000"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical"

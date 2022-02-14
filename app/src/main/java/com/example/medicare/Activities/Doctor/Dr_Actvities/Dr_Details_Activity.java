@@ -33,11 +33,13 @@ public class Dr_Details_Activity extends AppCompatActivity {
             less_info_view.setVisibility(View.VISIBLE);
             more_info_view.setVisibility(View.GONE);
         });
+
         less_info_view.setOnClickListener(v -> {
             more_info_layout.setVisibility(View.GONE);
             more_info_view.setVisibility(View.VISIBLE);
             less_info_view.setVisibility(View.GONE);
         });
+
         book_appointment_btn.setOnClickListener(v -> startActivity(new Intent(
                 Dr_Details_Activity.this, Patient_Details_Activity.class)
                 .putExtra("from", "Dr_Details")));
