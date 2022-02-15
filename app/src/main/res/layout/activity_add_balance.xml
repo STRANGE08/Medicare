@@ -29,7 +29,7 @@
                 app:tint="@color/black" />
 
             <TextView
-                android:layout_width="@dimen/dp_0"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
@@ -116,7 +116,7 @@
                         android:background="@drawable/edittext_background"
                         android:gravity="center_horizontal"
                         android:orientation="horizontal"
-                        android:paddingVertical="10dp"
+                        android:paddingVertical="@dimen/dp_10"    
                         android:paddingHorizontal="15dp">
 
                         <TextView

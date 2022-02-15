@@ -161,7 +161,6 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 int new_amount = 2000;
                 amount_to_add_et.setText("" + new_amount);
             } else {
-
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 2000;
@@ -175,7 +174,6 @@ public class Add_Balance_Activity extends AppCompatActivity {
                 int new_amount = 5000;
                 amount_to_add_et.setText("" + new_amount);
             } else {
-
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 5000;
@@ -187,12 +185,10 @@ public class Add_Balance_Activity extends AppCompatActivity {
 
         card_expiry_et.addTextChangedListener(new TextWatcher() {
             int prevL = 0;
-
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 prevL = card_expiry_et.getText().toString().length();
             }
-
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
