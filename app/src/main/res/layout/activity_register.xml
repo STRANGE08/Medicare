@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Create your account"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/sp_22"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -30,7 +30,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="Do already have an account? "
                 android:textColor="@color/grey"
                 android:textSize="16sp"
@@ -71,7 +70,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:src="@drawable/user_icon"
-                app:tint="@color/grey" />
+                app:tint="@color/black" />
 
             <View
                 android:layout_width="1dp"
@@ -120,7 +119,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:src="@drawable/mail"
-                app:tint="@color/grey" />
+                app:tint="@color/black" />
 
             <View
                 android:layout_width="1dp"
@@ -172,8 +171,8 @@
                 android:inputType="number"
                 android:padding="10dp"
                 android:textAlignment="center"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="16sp" />
 
             <View

@@ -24,7 +24,6 @@
                 android:id="@+id/medicines_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:text="Order Medicine Online"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
@@ -36,7 +35,7 @@
                 android:layout_below="@+id/medicines_tv"
                 android:gravity="center_horizontal"
                 android:text="Order you medicines with ease prescribed by Doctor"
-                android:textColor="@color/grey"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="normal" />
 

@@ -107,9 +107,7 @@ public class Add_Balance_Activity extends AppCompatActivity {
         });
 
 
-        findViewById(R.id.back).setOnClickListener(v -> {
-            finish();
-        });
+        findViewById(R.id.back).setOnClickListener(v -> finish());
 
 
         hundred.setOnClickListener(v -> {
@@ -141,19 +139,16 @@ public class Add_Balance_Activity extends AppCompatActivity {
 
         });
         thousand.setOnClickListener(v -> {
-
             if (amount_to_add_et.getText().toString().equalsIgnoreCase("")) {
                 int new_amount = 1000;
                 amount_to_add_et.setText("" + new_amount);
             } else {
-
                 String string_amount = amount_to_add_et.getText().toString().replace("₹", "");
                 int amount = Integer.parseInt(string_amount);
                 int new_amount = amount + 1000;
 
                 amount_to_add_et.setText("" + new_amount);
             }
-
         });
         two_thousand.setOnClickListener(v -> {
 
@@ -215,7 +210,6 @@ public class Add_Balance_Activity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
             }
-
             @Override
             public void afterTextChanged(Editable editable) {
                 int length = editable.length();

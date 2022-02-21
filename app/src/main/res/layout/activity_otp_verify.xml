@@ -25,13 +25,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:text="Enter your verification code sent on your mobile  "
-            android:textColor="@color/grey"
+            android:text="Enter your verification code sent on your mobile number +01-1234567890"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <LinearLayout
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -40,7 +40,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="number"
                 android:textColor="@color/grey"
                 android:textSize="16sp"
@@ -50,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="+01-1234567890"
+                android:text="number +01-1234567890"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -74,7 +73,7 @@
             app:hideLineWhenFilled="false"
             app:itemCount="6"
             app:itemHeight="48dp"
-            app:itemRadius="10dp"
+            app:itemRadius="@dimen/dp_15"
             app:itemSpacing="10dp"
             app:itemWidth="48dp"
             app:lineColor="@color/primary_glow"
